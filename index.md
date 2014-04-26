@@ -2,7 +2,7 @@
 layout: default
 ---
 
-This [book](book/) is a rails crash course.
+Bitcoin Rocks!
 
 <p><br /><b>Contact Information:</b></p>
 
