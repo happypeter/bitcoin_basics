@@ -445,3 +445,9 @@ table.rdata tr td.no-wd {
 div.slide {
   text-align: center;
 }
+
+#content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
