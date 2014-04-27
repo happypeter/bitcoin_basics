@@ -23,14 +23,27 @@ http://v.youku.com/v_show/id_XNTM5OTY2Njc2.html
 	- crc32，比较简单高效，安全性差，适合做 checksum 用来校验文件的完整性
 	md5，sha256
 
-	```
+	`come on this is inline code`
+
+	this is block code
+
+	~~~
 	sha256()
 	2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 	crc32()
 	84fb764c
 	md5()
 	d7f2b08853cc9d9c7664e4a421378c24
-	```
+	~~~
+
+	~~~file.c
+	sha256()
+	2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+	crc32()
+	84fb764c
+	md5()
+	d7f2b08853cc9d9c7664e4a421378c24
+	~~~
 
 	总之，比较简短高效的哈希算法可以用来做完整性校验（integrity verification)，这样的哈希值也可以叫做”校验值“（checksum), 也可以用来做原始数据的代表，这时哈希值也可以叫做”指纹“（fingerprint)。比较长的哈希算法（例如 sha256)可以用在加密领域。
 
