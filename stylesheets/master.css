@@ -448,6 +448,6 @@ div.slide {
 
 #content img {
   display: block;
-  margin: 0 auto;
+  margin: 25px auto;
   max-width: 500px;
 }
