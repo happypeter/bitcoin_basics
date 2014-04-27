@@ -36,5 +36,5 @@ d7f2b08853cc9d9c7664e4a421378c24
 
 参考资料：
 
-- <http://v.youku.com/v_show/id_XNTM5OTY4NTU2.html>
-- [youku Udacity公开课:CS253网页开发](http://v.youku.com/v_show/id_XNTM5OTY4NTU2.html)
+- Udacity公开课:CS253网页开发 <http://v.youku.com/v_show/id_XNTM5OTY4NTU2.html>
+- 维基百科 <http://en.wikipedia.org/wiki/Hash_function>
