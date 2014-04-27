@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Bitcoin Rocks!
+趣味比特币教程，由 Peter 为您倾情奉献。
 
 <p><br /><b>Contact Information:</b></p>
 
