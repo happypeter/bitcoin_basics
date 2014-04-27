@@ -3,4 +3,4 @@ layout: book
 title: 首页目录
 ---
 
-book index
+[[001_hash.html]]
