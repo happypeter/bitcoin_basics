@@ -1,5 +1,6 @@
 ---
 layout: default
+title: slides style guide
 ---
 
 ![](http://peterpic.qiniudn.com/slide-right.png)
