@@ -1,9 +1,10 @@
 ---
 layout: default
-title: slides style guide
+title: Slide Style Guide
 ---
-![right](http://peterpic.qiniudn.com/slide-right.png)
-![wrong](http://peterpic.qiniudn.com/slide-wrong.png)
-![label](http://peterpic.qiniudn.com/slide-label.png)
-
+<div class="ss-guide">
+<img src="http://peterpic.qiniudn.com/slide-right.png" alt="right">
+<img src="http://peterpic.qiniudn.com/slide-wrong.png" alt="wrong">
+<img src="http://peterpic.qiniudn.com/slide-label.png" alt="label">
+</div>
 
