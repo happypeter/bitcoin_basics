@@ -16,4 +16,3 @@ title: Slide Style Guide
 		<div class="ss-part-desc">intro</div>
   </div>
 </div>
-
