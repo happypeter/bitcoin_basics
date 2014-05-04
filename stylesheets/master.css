@@ -327,49 +327,6 @@ h3.subtitle small {
   padding-left: 10px;
 }
 
-table.rdata {
-  width: 95%;
-  background: #fff;
-  padding: 8px;
-  border: 1px solid #333;
-  font-size: 1.1em;
-}
-
-table.rdata tr.level {
-  color: #0b98b4;
-  background: #def;
-}
-
-table.rdata tr.even {
-  background: #eee;
-}
-
-table.rdata tr th.cmd {
-  font-family: monospace;
-  text-align: left;
-}
-table.rdata tr {
-}
-
-table.rdata tr th {
-  padding: 8px;
-}
-table.rdata tr td {
-  padding: 15px 8px;
-  border-left: 1px solid #def;
-}
-table.rdata tr td.no {
-  background: #fdd;
-}
-table.rdata tr td.yes {
-  background: #dfd;
-}
-table.rdata tr td.yes-wd {
-  background: #aea;
-}
-table.rdata tr td.no-wd {
-  background: #eaa;
-}
 
 .moreinfo {
   float: right;
@@ -450,4 +407,8 @@ div.slide {
   display: block;
   margin: 25px auto;
   max-width: 500px;
+}
+
+.ss-content img {
+  height: 80px;
 }
