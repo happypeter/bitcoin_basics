@@ -411,13 +411,15 @@ div.slide {
 
 .ss-guide .ss-part {
   border: 1px solid red;
-  margin: 10px;
+  padding: 10px;
 }
 .ss-guide img.ss-part-img {
   height: 40px;
+  display: block;
   float: left; 
   margin: 0;
 }
 .ss-guide .ss-part-desc {
-  color: green;
+  width: 400px;
+  float: right;
 }
