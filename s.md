@@ -8,11 +8,11 @@ title: Slide Style Guide
 		<p class="ss-part-desc">intro</p>
 	</div>	
 	<div class="ss-part">
-		<img class="ss-part" src="http://peterpic.qiniudn.com/slide-wrong.png" alt="wrong">
+		<img class="ss-part-img" src="http://peterpic.qiniudn.com/slide-wrong.png" alt="wrong">
 		<p class="ss-part-desc">intro</p>
 	</div>	
 	<div class="ss-part">
-		<img class="ss-part" src="http://peterpic.qiniudn.com/slide-label.png" alt="label">
+		<img class="ss-part-img" src="http://peterpic.qiniudn.com/slide-label.png" alt="label">
 		<p class="ss-part-desc">intro</p>
   </div>
 </div>
