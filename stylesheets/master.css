@@ -409,6 +409,15 @@ div.slide {
   max-width: 500px;
 }
 
-.ss-guide img.ss-part {
+.ss-guide .ss-part {
+  border: 1px solid red;
+  margin: 10px;
+}
+.ss-guide img.ss-part-img {
   height: 40px;
+  float: left; 
+  margin: 0;
+}
+.ss-guide .ss-part-desc {
+  color: green;
 }
