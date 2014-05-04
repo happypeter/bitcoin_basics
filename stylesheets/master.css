@@ -84,17 +84,17 @@ img.right {
   text-align: center;
 }
 
-#content {
+.content {
   padding: 2em;
 }
 
-#content h2 {
+.content h2 {
   margin: 0 0 0.5em 0;
   color: black;
   font-size: 1.5em;
 }
 
-#content p {
+.content p {
   line-height: 140%;
 }
 
@@ -193,7 +193,7 @@ div.related {
   float: left;
 }
 
-#content .home_box h2 {
+.content .home_box h2 {
   background: #333;
   padding: 0.3em 0.5em;
   border-bottom: 3px solid #666;
@@ -403,7 +403,7 @@ div.slide {
   text-align: center;
 }
 
-#content img {
+.content img {
   display: block;
   margin: 25px auto;
   max-width: 500px;
