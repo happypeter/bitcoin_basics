@@ -17,5 +17,7 @@ title: 非对称加密
  - 对称性加密为啥不行？
 
  - 信箱的比喻应该挺好的，wiki 上
- - 蜡封的比喻也是值得讲的
+ - 蜡封的比喻也是值得讲
+
+ - <https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-digital-signatures>
 
