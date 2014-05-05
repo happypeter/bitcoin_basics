@@ -20,7 +20,7 @@ http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 
 - 下面是小夏她们给的录视频的建议，很多都是很好的点：
 
-```
+~~~
 1. 关于⽐特币!
 1.1 认识⽐特币!
 1.2 ⽐特币起源!
@@ -87,7 +87,7 @@ http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 8.1 李笑来专栏（周期性访谈）!
 8.2 ⽐特币⾏情分析（周期性⾛势解读）!
 8.3 ⽐特币时事播报（不定期相关事件播报、解读）
-```
+~~~
 
 - 交易所集中化之问题
   - 不仅仅是会跑路啊，如果有大跌行情出现，交易所也是会很被动：http://www.huobi.com/news/index.php?a=show_notice&id=250
