@@ -90,12 +90,14 @@ img.right {
 
 .content h2 {
   margin: 0 0 0.5em 0;
-  color: black;
+  color: #595959;
   font-size: 1.5em;
 }
 
 .content p {
-  line-height: 140%;
+  line-height: 1.75;
+  color: #595959;
+  // steal this from logdown
 }
 
 span.date {
