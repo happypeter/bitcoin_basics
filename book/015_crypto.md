@@ -7,13 +7,14 @@ title: 有意思的加密通信
 
 ![](http://peterpic.qiniudn.com/mim.png)
 
-对称性加密为啥不行？密码本身传递就有难度 .信箱的比喻应该挺好的，wiki 上
+对称性加密为啥不行？密码本身传递就有难度 .
+
+信箱的比喻应该挺好的，wiki 上
 
  
 
- - http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html
-   - 加密安全课程
 
 - 参考资料：
-  - http://en.wikipedia.org/wiki/Public-key_cryptography
-	- https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-cryptographic-hash-function
+  - <http://en.wikipedia.org/wiki/Public-key_cryptography>
+  - <http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html>
+
