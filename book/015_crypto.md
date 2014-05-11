@@ -31,6 +31,13 @@ title: 有意思的加密通信
 
 实际在互联网情况下的一个应用场景。我在北京，如果我有一台服务器在美国，那么我如何让信息从我的服务骑上安全的传递到我这里呢？首先，我先生成一对 key，然后我就把 pubkey 传到我的服务器上，这样，我的服务器就可以把信息加密，然后传递给我了，听起来可能比较麻烦，但是实际中又 ssh 这样的程序帮忙，其实加密和解密过程都是自动完成的。
 
+~~~
+$> ssh-keygen
+Generating public/private rsa key pair.
+$> ls .ssh/
+id_rsa id_rsa.pub
+~~~
+
 ### 参考资料：
   - <http://en.wikipedia.org/wiki/Public-key_cryptography>
   - <http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html>
