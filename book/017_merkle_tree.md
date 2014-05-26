@@ -1,3 +1,8 @@
+---
+layout: book
+title: 白话 Merkle Tree
+---
+
 今天为啥又聊 Merkle Tree 呢？ 这个我们地球上大部分人应该连名字都没有听过，而且也是个比较传统的概念了。Merkle Tree 是由 Ralph Merkle 这位计算机科学家在很多年前提出的。但是 Merkle Tree 确实涉及到了很有意思的应用，最近几年才有的一个实用例子：比特币钱包服务用 Merkle Tree 的机制来作”百分百准备金证明“ （ <http://blog.bifubao.com/2014/03/16/proof-of-reserves/> ）。不过今天，我们还是从数据完整性校验的这个角度来聊 merkle tree。 git 版本控制系统，zfs 文件系统以及我们自己下片常用的 bt 下载，都是通过 merkle tree 来进行数据完整性校验(Integrity Verification)的。
 
 ### 先说哈希( hash )
