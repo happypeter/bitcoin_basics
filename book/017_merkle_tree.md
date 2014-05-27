@@ -46,5 +46,6 @@ title: 白话 Merkle Tree
 好，这一期就说这么多，大家现在概念上有个认识，后面我们会有专门的文章讲 Merkle Tree 实用的例子。
 
 ### 参考资料
-  - <https://www.youtube.com/watch?v=Js535LqapFE#t=238> 给出了 Merkle Tree 相对于 Hash List 的优势。
+  - <https://www.youtube.com/watch?v=Js535LqapFE#t=238> 
+    给出了 Merkle Tree 相对于 Hash List 的优势。
   - <http://en.wikipedia.org/wiki/Merkle_tree>
