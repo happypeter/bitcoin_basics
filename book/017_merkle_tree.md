@@ -39,6 +39,8 @@ title: 白话 Merkle Tree
 
 再说它的优点。
 
+![](http://peterpic.qiniudn.com/sub_tree.png)
+
 相对于 Hash List，Merkle Tree 的明显的一个好处是可以单独拿出一个分支来（作为一个小树）对部分数据进行校验，这个很多使用场合就带来了哈希列表所不能比拟的方便和高效。
 
 
