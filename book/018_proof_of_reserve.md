@@ -57,3 +57,4 @@ title: 100%准备金证明-基础篇
 
 ###  参考：
 - <https://iwilcox.me.uk/2014/proving-bitcoin-reserves>
+- 币付宝的博客：<http://blog.bifubao.com/2014/03/16/proof-of-reserves/>
