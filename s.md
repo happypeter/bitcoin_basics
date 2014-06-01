@@ -16,3 +16,7 @@ title: Slide Style Guide
 		<div class="ss-part-desc">标签，标注</div>
   </div>
 </div>
+
+- IT protection
+  或者是开篇说话的时候，就提一句欢迎大家收看这期的knewcoin的###视频，类似这样的话哈
+  ![](http://peterpic.qiniudn.com/knewcoin.png)

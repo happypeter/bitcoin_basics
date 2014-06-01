@@ -50,11 +50,6 @@ title: 100%准备金证明-基础篇
 
 好，这里大家了解了一个简化版的 Merkle Tree 验证方法的基本逻辑，下一篇跟大家一起分析一下这样的做法为啥说是具有“逻辑完备性”的。之后，会继续讨论这种简化版本的模式有什么不足的地方，需要添加哪些新的细节进来进行完善。
 
-- IT protection
-  或者是开篇说话的时候，就提一句欢迎大家收看这期的knewcoin的###视频，类似这样的话哈
-  ![](http://peterpic.qiniudn.com/knewcoin.png)
-
-
 ###  参考：
 - <https://iwilcox.me.uk/2014/proving-bitcoin-reserves>
 - 币付宝的博客：<http://blog.bifubao.com/2014/03/16/proof-of-reserves/>
