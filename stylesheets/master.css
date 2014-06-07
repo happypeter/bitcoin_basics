@@ -97,7 +97,7 @@ div.slide {
   border-radius: 1.5em;
 }
 
-#header {
+.header {
   font-family: Courier;
   text-align: left;
   background: #222;
@@ -111,18 +111,18 @@ div.slide {
   text-align: center;
 }
 
-#header h1 a {
+.header h1 a {
   color: white;
 }
 
-#header h1 {
+.header h1 {
   font-size: 4em;
   display: inline;
   color: #fff;
   font-weight: normal;
 }
 
-#header h2 {
+.header h2 {
   display: inline;
   margin-left: 0.5em;
   font-size: 1.4em;
