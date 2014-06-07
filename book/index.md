@@ -18,8 +18,5 @@ layout: book
 	<li>
 		<a href="018_proof_of_reserve.html">018 比特币百分百准备金证明</a><span>June 2, 2014</span>
 	</li>
-	<li>
-		<a href="tmp.html">备忘内容</a><span>Future</span>
-	</li>
 </ul>
 
