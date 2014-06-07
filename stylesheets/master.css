@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 
 pre {
   background: #f8f8f8;
@@ -36,6 +41,9 @@ pre code {
 
 /* sections/book-index.css*/
 
+.listing {
+  padding: 0 30px;
+}
 .listing li {
   list-style-type: none;
   margin-bottom: 0;
