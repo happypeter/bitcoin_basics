@@ -1,20 +1,39 @@
+/* common.css */
 body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #dda;
   color: #222;
 }
 
-a:visited {
-  color: #444;
+a {
+  color: #307EA9;
 }
 
-.more { font-size: 0.7em;}
-
-img.right {
-  float: right;
-  margin: 15px;
+pre {
+  background: #f8f8f8;
+  border: 1px solid #E7E5DC;
+  border-width: 1px 0 4px 6px;
+  padding: 1em;
+  overflow: auto;
+  color: black;
+  line-height: 120%;
+  font-family: "Consolas","Courier New",Courier,mono;
+  font-size: 12px;
+  letter-spacing: 0;
 }
 
+code {
+  background: #f8f8f8;
+  border: 1px solid #E7E5DC;
+  padding: 0.2em;
+}
+
+pre code {
+  border: none;
+}
+
+
+/* layout.css */
 #wrapper {
   width: 50em;
   margin: 2em auto 0;
@@ -76,13 +95,6 @@ img.right {
   font-weight: normal;
 }
 
-#message {
-  padding: 20px;
-  margin: 10px 30px;
-  border: 1px solid #383;
-  background: #aea;
-  text-align: center;
-}
 
 .content {
   padding: 2em;
@@ -100,61 +112,10 @@ img.right {
   // steal this from logdown
 }
 
-span.date {
-  background: #484;
-  display: block;
-  padding: 0.4em 0.6em 0.3em;
-  font-weight: bold;
-  color: white;
-  border-bottom: 3px solid #262;
-  float: left;
-}
 
-div.post {
-  margin-bottom: 2em;
-}
 
-.post h1 {
-  margin-top: 0.2em;
-}
 
-.post { color: #333; }
 
-.post h1 a {
-  text-decoration: none;
-  clear: left;
-  display: block;
-  color: black;
-  padding: 0.3em 0;
-  margin: 0 0 0.2em 0;
-  border-bottom: 1px dashed #555;
-  font-weight: bold;
-}
-
-.post br { margin-bottom: 10px;}
-
-pre {
-  background: #f8f8f8;
-  border: 1px solid #E7E5DC;
-  border-width: 1px 0 4px 6px;
-  padding: 1em;
-  overflow: auto;
-  color: black;
-  line-height: 120%;
-  font-family: "Consolas","Courier New",Courier,mono;
-  font-size: 12px;
-  letter-spacing: 0;
-}
-
-code {
-  background: #f8f8f8;
-  border: 1px solid #E7E5DC;
-  padding: 0.2em;
-}
-
-pre code {
-  border: none;
-}
 
 table.post-list {
   width: 100%;
