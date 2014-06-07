@@ -20,9 +20,3 @@ title: Slide Style Guide
 - IT protection
   或者是开篇说话的时候，就提一句欢迎大家收看这期的knewcoin的###视频，类似这样的话哈
   ![](http://peterpic.qiniudn.com/knewcoin.png)
-
- <ul class="posts">
-   {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
