@@ -1,6 +1,5 @@
 ---
 layout: book
-title: 目录
 ---
 
 <ul class="listing">
