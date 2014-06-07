@@ -11,6 +11,8 @@ http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 * qq 邮箱，peatio 用不了，其他国内可以用
   * 推荐用 gmail 邮箱
 
+* http://www.bitcoininplainenglish.com/wordpress/
+  - 这个网站和我的《趣味比特币》角度挺像的
 
 网上的一些视频：
   - http://v.youku.com/v_show/id_XNjc0ODE5OTc2.html
