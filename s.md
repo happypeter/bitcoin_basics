@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: book
 title: Slide Style Guide
 ---
 <div class="ss-guide">
