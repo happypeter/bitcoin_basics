@@ -7,7 +7,9 @@ body {
 
 a {
   color: #307EA9;
+  text-decoration: none;
 }
+
 
 pre {
   background: #f8f8f8;
@@ -31,6 +33,24 @@ code {
 pre code {
   border: none;
 }
+
+/* sections/book-index.css*/
+
+.listing li {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 7px 5px;
+  font-size: 18px;
+}
+
+.listing span {
+  padding-top: 2px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+
 
 /* sections/book.css */
 
