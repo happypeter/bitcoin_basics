@@ -42,3 +42,7 @@
 - 为什么要 nonce
 
 - 冷钱包签名的验证部分很有意思啊：http://blog.bifubao.com/2014/03/16/proof-of-reserves/
+  - 这个是大家都在用的方法啦
+    If you wanted to double check that I was actually the owner of the address before you sent me coins you could ask that I send a signed message associated with address proving it’s mine.
+  - http://bitcoinmagazine.com/12007/bitcoin-address-sign/
+  
