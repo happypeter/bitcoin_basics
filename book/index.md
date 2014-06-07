@@ -1,5 +1,6 @@
 ---
 layout: book
+title: 快乐新知比特币
 ---
 
 <ul class="listing">
