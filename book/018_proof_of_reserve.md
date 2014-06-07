@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: book
 title: 100%准备金证明-基础篇
 ---
 
