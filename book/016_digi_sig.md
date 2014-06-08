@@ -27,12 +27,8 @@ title: 有意思的数字签名
 
 ### 现实应用
 
-所以前面我们能看到，数字签名不但可以证明文件是谁发出的，而且可以保证文件内容丝毫未被改动过，所以可以认为是比纸上签名更为安全的一种签名方式，所以在世界上很多国家，数字签名的合同和文件是有实际法律效力的。再举一个例子，在茫茫互联网上，如果我要签署一笔交易，保证一种特定的数字资产确实是经过我的授权，从我的账号转到了另外一个账号，那么这个过程也可以用数字签名来实现，比特币就是一个这样的实际应用。可汗学院有一门比特币的课程（参考文献中有链接），其中还专门有一集是讲数字签名的，本文中就参考了这集里面的大量内容。特此感谢。
+所以前面我们能看到，数字签名不但可以证明文件是谁发出的，而且可以保证文件内容丝毫未被改动过，所以可以认为是比纸上签名更为安全的一种签名方式，所以在世界上很多国家，数字签名的合同和文件是有实际法律效力的。再举一个例子，在茫茫互联网上，如果我要签署一笔交易，保证一种特定的数字资产确实是经过我的授权，从我的账号转到了另外一个账号，那么这个过程也可以用数字签名来实现，比特币就是一个这样的实际应用。可汗学院有一门比特币的课程（ <https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-digital-signatures> ），其中还专门有一集是讲数字签名的，本文中就参考了这集里面的大量内容。特此感谢。
 
 ![](http://peterpic.qiniudn.com/bitcoin_lec.png)
 
 好了，数字签名就跟大家聊到这里。
-
-### 参考：
-- <http://en.wikipedia.org/wiki/Digital_signature>
--  <https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-digital-signatures>

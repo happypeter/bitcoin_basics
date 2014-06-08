@@ -38,9 +38,5 @@ $> ls .ssh/
 id_rsa id_rsa.pub
 ~~~
 
-好，加密通信就说这么多，以后有机会我们会谈一个相关的话题：数字签名。
-
-### 参考资料：
-  - <http://en.wikipedia.org/wiki/Public-key_cryptography>
-  - <http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html>
+好，加密通信就说这么多，更多信息大家可以参考 <http://en.wikipedia.org/wiki/Public-key_cryptography> ，以后有机会我们会谈一个相关的话题：数字签名。
 

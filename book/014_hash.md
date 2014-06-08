@@ -39,8 +39,3 @@ d7f2b08853cc9d9c7664e4a421378c24
 总之，比较简短高效的哈希算法可以用来做完整性校验（integrity verification)，这样的哈希值也可以叫做”校验值“（checksum), 也可以用来做原始数据的代表，这时哈希值也可以叫做”指纹“（fingerprint)。比较长的哈希算法（例如 sha256)适合用在加密领域。
 
 ![](http://peterpic.qiniudn.com/fingerprint.jpeg)
-
-参考资料：
-
-- Udacity公开课:CS253网页开发 <http://v.youku.com/v_show/id_XNTM5OTY4NTU2.html>
-- 维基百科 <http://en.wikipedia.org/wiki/Hash_function>
