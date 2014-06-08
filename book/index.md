@@ -5,7 +5,7 @@ title: 快乐新知比特币
 
 <ul class="listing">
 	<li>
-		<a href="019_proof_of_reserve_2n.html">019 百分百准备金证明-细节篇</a><span>June 8, 2014</span>
+		<a href="019_proof_of_reserve_2nd.html">019 百分百准备金证明-细节篇</a><span>June 8, 2014</span>
 	</li>
 	<li>
 		<a href="018_proof_of_reserve.html">018 百分百准备金证明-基础篇</a><span>June 2, 2014</span>
