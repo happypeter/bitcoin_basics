@@ -5,7 +5,7 @@ title: 快乐新知比特币
 
 <ul class="listing">
 	<li>
-		<a href="020_p2p.html">图解 P2P 网络</a><span>June 15, 2014</span>
+		<a href="020_p2p.html">020 图解 P2P 网络</a><span>June 15, 2014</span>
 	</li>
 	<li>
 		<a href="019_proof_of_reserve_2nd.html">019 百分百准备金证明-细节篇</a><span>June 8, 2014</span>
