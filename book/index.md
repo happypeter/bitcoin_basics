@@ -5,6 +5,9 @@ title: 快乐新知比特币
 
 <ul class="listing">
 	<li>
+		<a href="021_two_cultures.html">021 两种文化的融合</a><span>June 22, 2014</span>
+	</li>
+	<li>
 		<a href="020_p2p.html">020 分而不散的 P2P 网络</a><span>June 15, 2014</span>
 	</li>
 	<li>
