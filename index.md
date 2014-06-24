@@ -15,11 +15,15 @@ happypeter1983@gmail.com
 </blockquote>
 
 
-from <a
+From <a
 href="http://happypeter.github.io/bitcoin_basics/book/021_two_cultures.html">Marc
 Andreessen</a>:
 
->I think we have a obligation to explain ourselves. I think the days when you can have sth as fundamentally important as bitcoin gets created and unleashed in the world and everybody expected to adapt to without having it get translated from weird and scary to like ok you can wrap your head as normal people around this.
+>I think we have a obligation to explain ourselves. I think the days when you
+>can have sth as fundamentally important as bitcoin gets created and unleashed
+>in the world and everybody expected to adapt to without having it get
+>translated from weird and scary to like ok you can wrap your head as normal
+>people around this...
 
 
 
