@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
 	<li>
+		<a href="022_seven_habits.html">022 高效比特币人的七个习惯</a><span>June
+30, 2014</span>
+	</li>
+	<li>
 		<a href="021_two_cultures.html">021 两种文化的融合</a><span>June 22, 2014</span>
 	</li>
 	<li>
