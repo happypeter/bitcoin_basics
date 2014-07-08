@@ -163,10 +163,19 @@ div.slide {
   font-size: 1.5em;
 }
 
-.content p {
+.content p, .content ul {
   line-height: 1.75;
   color: #595959;
   // steal this from logdown
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  list-style-type: square;
+  margin-bottom: 20px;
 }
 
 #footer {
