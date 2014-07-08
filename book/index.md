@@ -4,37 +4,37 @@ title: 快乐新知比特币
 ---
 
 <ul class="listing">
-	<li>
-		<a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July
+  <li>
+    <a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July
 7, 2014</span>
-	</li>
-	<li>
-		<a href="022_seven_habits.html">022 高效比特币人的七个习惯</a><span>June
+  </li>
+  <li>
+    <a href="022_seven_habits.html">022 高效比特币人的七个习惯</a><span>June
 30, 2014</span>
-	</li>
-	<li>
-		<a href="021_two_cultures.html">021 两种文化的融合</a><span>June 22, 2014</span>
-	</li>
-	<li>
-		<a href="020_p2p.html">020 分而不散的 P2P 网络</a><span>June 15, 2014</span>
-	</li>
-	<li>
-		<a href="019_proof_of_reserve_2nd.html">019 百分百准备金证明-细节篇</a><span>June 8, 2014</span>
-	</li>
-	<li>
-		<a href="018_proof_of_reserve.html">018 百分百准备金证明-基础篇</a><span>June 2, 2014</span>
-	</li>
-	<li>
-		<a href="017_merkle_tree.html">017 Merkle Tree</a><span>May 30, 2014</span>	
-	</li>
-	<li>
-		<a href="016_digi_sig.html">016 数字签名</a><span>May 17, 2014</span>
-	</li>
-	<li>
-		<a href="015_crypto.html">015 加密通信</a><span>May 12, 2014</span>
-	</li>
-	<li>
-		<a href="014_hash.html">014 哈希</a> <span>May 6, 2014</span>
-	</li>
+  </li>
+  <li>
+    <a href="021_two_cultures.html">021 两种文化的融合</a><span>June 22, 2014</span>
+  </li>
+  <li>
+    <a href="020_p2p.html">020 分而不散的 P2P 网络</a><span>June 15, 2014</span>
+  </li>
+  <li>
+    <a href="019_proof_of_reserve_2nd.html">019 百分百准备金证明-细节篇</a><span>June 8, 2014</span>
+  </li>
+  <li>
+    <a href="018_proof_of_reserve.html">018 百分百准备金证明-基础篇</a><span>June 2, 2014</span>
+  </li>
+  <li>
+   <a href="017_merkle_tree.html">017 Merkle Tree</a><span>May 30, 2014</span>
+  </li>
+  <li>
+    <a href="016_digi_sig.html">016 数字签名</a><span>May 17, 2014</span>
+  </li>
+  <li>
+    <a href="015_crypto.html">015 加密通信</a><span>May 12, 2014</span>
+  </li>
+  <li>
+    <a href="014_hash.html">014 哈希</a> <span>May 6, 2014</span>
+  </li>
 </ul>
 
