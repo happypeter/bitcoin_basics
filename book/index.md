@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
 	<li>
+		<a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July
+7, 2014</span>
+	</li>
+	<li>
 		<a href="022_seven_habits.html">022 高效比特币人的七个习惯</a><span>June
 30, 2014</span>
 	</li>
