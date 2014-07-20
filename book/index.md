@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="024_breakthrough.html">024 比特币是怎样一个技术突破 </a><span>July
+21, 2014</span>
+  </li>
+  <li>
     <a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July
 7, 2014</span>
   </li>
