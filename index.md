@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: main
 title: 快乐新知比特币
 ---
 
