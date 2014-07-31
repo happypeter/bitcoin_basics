@@ -1,1 +1,8 @@
 markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "./book/" # an empty string here means all files in the project
+    values:
+      layout: "book"
