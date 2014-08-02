@@ -17,3 +17,64 @@ Peter 说：本文是 <http://www.coindesk.com/information/how-do-bitcoin-transa
 
 其实，有的只是各个地址之间的转账记录，余额时增时减。所有的交易都存放在一个非常大的账本文件中，这个文件叫做“区块链”。如果你想知道一个比特币地址中得余额，那么这个数不是直接存放在比特币地址中的，我们需要到区块链中去计算出来。
 
+
+### 一个交易长成啥样
+
+如果 Alice 给 Bob 发送一些比特币，那么这个交易就有三项信息：
+
+- 一个输入。这里面记录了最初 Alice 拥有的这些币是从哪个地址转给她的，假设她是从她的朋友 Eve 哪里得到的币。
+
+- 一个数目。这个就是 Alice 到底给 Bob 转了多少个比特币。
+
+- 一个输出。Bob 的比特币地址。
+
+
+How is it sent?
+
+### 发送过程如何进行
+
+比特币交易中是如何发币的呢？你需要两个东西，一个是比特币地址一个是对应的私钥。比特币地址跟银行账号不一样，你不需要签署一堆文件去申请，它们是随机生成的，就是一串由字母和数字组成的字符串。私钥也是类似的一个字符串，但是这个是要严格保密的。
+
+比特币地址就好像一个透明的存钱罐，每个人都可以看到里面有什么，但是只有有私钥的人才能打开它。
+
+当 Alice 想要给 Bob 转币的时候，就用私钥来签署一段信息，其中包括输入，数目和输出。
+
+这样，信息广播到比特币网络上，矿工就可以验证这次交易，把交易加入区块链中了。
+
+
+### 为啥交易会有十分钟的等待时间
+
+因为交易需要经过矿工的验证确认之后才能写到区块链之中，所以你必须要等待一下，等待他们挖矿成功。
+
+比特币协议里面设置了挖矿完成的大概时间是10分钟。所以商家可能会等到你的交易所在的区块被确认之后才会给你发货。
+
+但是也有商家不会让你去等，基本上基于对你的一个信任，相信你不会在交易没有得到确认之前有去拿同一笔钱花在别的地方。不过一般这只适用于小额交易。
+
+
+### 输入和输出中的数额不相等怎么办？
+
+因为比特币只是以交易记录的形式存在，所以很多时候你的一个地址上面其实是对于很多个交易的。可能 Jane 发送给了 Alice 两个比特币，Philip 给了三个，Eve 给了一个，这些都是不同时间的不同的交易，他们并没有被合成到 Alice 的一个钱包里形成一个有六个币的文件，而是任然作为独立的各个交易记录存在。
+
+当 Alice 想要给 Bob 转币的时候，她的钱包就会找到几个交易，让它们的数额加起来正好是 Alice 想要转的数目。 当然，很可能在 Alice 想要给 Bob 转币的时候，她没有办法找到几个交易加起来正好是转账数额。也许她想要转 1.5 个币，但是钱包中根本没有一个交易或是多个交易的和正好是这个数目。
+
+她没有办法把一个交易切割成小的数额。就是这样，你没有办法切割一个大的交易成为多个小数额，你每次都必须花掉整个交易。但是不用担心，系统会给她把多发送出去的币作为找零还给她。
+
+
+Alice 这时就可以把 Jane 给她发送过来的两个币发送给 Bob，这样 Jane 就是“输入”，Bob 就是“输出”，“数额”是1.5个币，这时 Alice 真正想要转账的数目。这样，Alice 的钱包就会自动给她的这次交易创建两个输出：把1.5个币给 Bob，剩下的0.5放到一个新的地址中，这个是找回的零钱。
+
+
+### 交易过程收费吗？
+
+Sometimes, but not all the time. Transaction fees are calculated using various factors. Some wallets let you set transaction fees manually. Any portion of a transaction that isn’t picked up by the recipient or returned as change is considered a fee. This then goes to the miner lucky enough to solve the transaction block as an extra reward.
+
+Right now, many miners process transactions for no fees. As the block reward for bitcoins decreases, this will be less likely.
+
+One of the frustrating things about transaction fees in the past was that the calculation of those fees was complex and arcane. It has been the result of several updates to the protocol, and has developed organically. Updates to the core software handling bitcoin transactions will see it change the way that it handles transaction fees, instead estimating the lowest fee that will be accepted.
+
+Can I get a receipt?
+
+ReceiptBitcoin wasn’t really meant for receipts. Although there are changes coming in version 0.9 that will alter the way payments work, making them far more user-friendly and mature. Payment processors like BitPay also provide the advanced features that you wouldn’t normally get with a native bitcoin transaction, such as receipts and order confirmation web pages.
+
+What if I only want to send part of a bitcoin?
+
+Bitcoin transactions are divisible. A satoshi is one millionth of a bitcoin, and it is possible to send a transaction as small as 5430 satoshis on the bitcoin network.
