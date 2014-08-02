@@ -1,3 +1,4 @@
+
 http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 
 邱亮推荐录一个 onepassword 的视频，给 knewcoin 
