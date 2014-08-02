@@ -65,16 +65,19 @@ Alice 这时就可以把 Jane 给她发送过来的两个币发送给 Bob，这�
 
 ### 交易过程收费吗？
 
-Sometimes, but not all the time. Transaction fees are calculated using various factors. Some wallets let you set transaction fees manually. Any portion of a transaction that isn’t picked up by the recipient or returned as change is considered a fee. This then goes to the miner lucky enough to solve the transaction block as an extra reward.
+交易手续费是综合多种因素得出的。有些钱包可以让你手动设置收费费。交易中那部分没有被对方收到，同时也没有找零回来的就是手续费。这笔钱最终会被得到记账权的那个幸运的矿工所得到。
 
 Right now, many miners process transactions for no fees. As the block reward for bitcoins decreases, this will be less likely.
 
-One of the frustrating things about transaction fees in the past was that the calculation of those fees was complex and arcane. It has been the result of several updates to the protocol, and has developed organically. Updates to the core software handling bitcoin transactions will see it change the way that it handles transaction fees, instead estimating the lowest fee that will be accepted.
+目前，很多矿工都不收手续费。但是随着每次挖矿成功系统奖励给矿工的币不断减少，未来肯定会有更多的矿工会收取手续费的。
 
-Can I get a receipt?
+一直以来有一件很让人恼火的事情就是计算矿工费的过程非常复杂难懂。不过后来大家对协议做了相应的修改，现在的软件能够自动处理矿工费的问题了。
 
-ReceiptBitcoin wasn’t really meant for receipts. Although there are changes coming in version 0.9 that will alter the way payments work, making them far more user-friendly and mature. Payment processors like BitPay also provide the advanced features that you wouldn’t normally get with a native bitcoin transaction, such as receipts and order confirmation web pages.
+### 能开收据吗？
 
-What if I only want to send part of a bitcoin?
+比特币系统设计时并没有考虑收据问题。不过0.9版本的比特币中稍微修改一下付款的方式，让整个过程更方便。支付服务商，例如 Bitpay，也提供一些比特币基本交易过程提供不了的功能，例如收据或者交易确认页面等。
 
-Bitcoin transactions are divisible. A satoshi is one millionth of a bitcoin, and it is possible to send a transaction as small as 5430 satoshis on the bitcoin network.
+
+### 能发送小额的比特币吗？
+
+比特币理论上是可以无限切割的。目前最小的比特币单位叫做“中本聪”，相当于0.00000001个比特币。
