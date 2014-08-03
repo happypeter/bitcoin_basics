@@ -3,7 +3,7 @@ layout: book
 title: 比特币交易是如何工作的
 ---
 
-Peter 说：本文是 <http://www.coindesk.com/information/how-do-bitcoin-transactions-work/> 的翻译，当然我又给配了几张好看的图。
+Peter 说：本文是 <http://www.coindesk.com/information/how-do-bitcoin-transactions-work/> 的翻译。
 
 
 所谓比特币交易就是从一个比特币钱包向另一个中转账，每笔交易都是有数字签名来保证安全。一个交易一旦发生那么就是对所有人都公开的，每个交易的历史可以最终追溯到相应的比特币最初被挖出来的那个点。
