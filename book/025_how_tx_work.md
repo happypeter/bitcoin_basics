@@ -59,6 +59,8 @@ Peter 说：本文是 <http://www.coindesk.com/information/how-do-bitcoin-transa
 
 同时，她没有办法把一个交易切割成小的数额。就是这样，你没有办法切割一个大的交易成为多个小数额，每次都必须花掉整个交易。但是不用担心，系统会给她把多发送出去的币作为找零还给你。
 
+![](http://media.happycasts.net/pic/peterpic/litte_change.png)
+
 Alice 这时就可以把 Jane 给她发送过来的两个币发送给 Bob，这样 Jane 就是“输入”，Bob 就是“输出”，“数额”是1.5个币，这时 Alice 真正想要转账的数目。这样，Alice 的钱包就会自动给她的这次交易创建两个输出：把1.5个币给 Bob，剩下的0.5放到一个新的地址中，这个是找回的零钱。
 
 ### 交易过程收费吗？
