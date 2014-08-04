@@ -61,7 +61,7 @@ Peter 说：本文是 <http://www.coindesk.com/information/how-do-bitcoin-transa
 
 ![](http://media.happycasts.net/pic/peterpic/litte_change.png)
 
-Alice 这时就可以把 Jane 给她发送过来的两个币发送给 Bob，这样 Jane 就是“输入”，Bob 就是“输出”，“数额”是30个币，这时 Alice 真正想要转账的数目。这样，Alice 的钱包就会自动给她的这次交易创建两个输出：把30个币给 Bob，剩下的10.5放到一个新的地址中，这个是找回的零钱。
+Alice 这时就可以把 Jane 给她发送过来的两个币发送给 Bob，这样 Jane 就是“输入”，Bob 就是“输出”，“数额”是30个币，这时 Alice 真正想要转账的数目。这样，Alice 的钱包就会自动给她的这次交易创建两个输出：把30个币给 Bob，剩下的30放到一个新的地址中，这个是找回的零钱。
 
 ### 交易过程收费吗？
 
