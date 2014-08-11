@@ -5,7 +5,7 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
-    <a href="026_celebrty.html">026 名人眼中的比特币</a><span> August
+    <a href="026_celebrity.html">026 名人眼中的比特币</a><span> August
 12, 2014</span>
   </li>
   <li>
