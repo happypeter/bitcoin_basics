@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="026_celebrty.html">026 名人眼中的比特币</a><span> August
+12, 2014</span>
+  </li>
+  <li>
     <a href="025_how_tx_work.html">025 比特币交易是如何工作的</a><span> August
 5, 2014</span>
   </li>

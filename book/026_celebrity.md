@@ -8,6 +8,8 @@ titile: 名人眼中的比特币
 
 ### Paul Gramham
 
+![](http://media.happycasts.net/pic/peterpic/pg.jpg)
+
 第一个要说的是我最崇拜的 pg，硅谷最成功（我觉得没有之一）的创业孵化器 YC 的创始人，
 成功孵化了像 reddit，airbnb，dropbox，heroku 这些公司，他的网站 http://www.paulgraham.com/ 上面有很多文章是创业者必读的，这些内容也被编成一本书叫做 《黑客与画家》北京这边的书店我以前看到都有卖的。
 大家可以到 YC 的官方论坛 Hacker News 上面跟他讨论问题：<https://news.ycombinator.com/> 就像这里
