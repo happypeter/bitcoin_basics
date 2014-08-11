@@ -3,7 +3,7 @@ layout: book
 titile: 名人眼中的比特币
 ---
 
-最近咱们的视频比较冰冷的理论比较多，今天来点好玩的，说说很多大众名人眼里的比特币。
+最近咱们的视频冰冷的理论比较多，今天来点好玩的，说说很多大众名人眼里的比特币。
 
 
 ### Paul Gramham
@@ -27,11 +27,22 @@ titile: 名人眼中的比特币
 Jack 是 twitter 的创始人，目前他工作在另外一家他新创立的公司，叫做 square 是一家移动支付公司，所以作为业内人士，Jack 的意见是有相当的参考价值的。
 这个是有视频的： <https://www.youtube.com/watch?v=0zJe4PUVx3c>
 
+2011 年的时候他又一个介绍 square 的 idea 的由来的视频 <http://startups.co.uk/jack-dorsey-on-payment-as-a-form-of-communication-video/> 其中提到一句话，我觉得特别有意思，他说：“Payment is anothor form of communication" 支付是任何人交流沟通的另外一种形式。后来在一次访谈中他发表了他对比特币的看法，视频链接 <https://www.youtube.com/watch?v=0zJe4PUVx3c>
 
-http://thenextweb.com/insider/2014/03/31/square-now-lets-sellers-accept-bitcoin-storefronts/
+![](http://media.happycasts.net/pic/peterpic/jd_youtube.png)
 
 
-Mark Anderssen
+>Bitcoin is a dream for a lot of mathematician，because it represents a fully anonymous currency that can not be trace. I think it does need to be a digital equivalence to cash. Anonymity is really important to our democracy，we value anonymous communication. Currency is another form of a vote. We need to be able to replicate paper-backed currency，bitcoin is a potential answer，it may not be the one, but it will be one.
+
+
+比特币是很多数学家的一个梦想，它提供了一种不可跟踪的匿名货币。我希望比特币能成为现金的一种替代品。匿名对于我们的民主是非常重要的，我们认为人和人之间的匿名沟通很重要。货币可以说是另一种形式的选票。人们应该有权力去自己弄出纸质的法币的替代品，比特币给出了一种可能的答案。可能答案不是比特币，但是一定会有一个答案的。
+
+
+现在从 Square 的官网上我们看到 Square 现在已经可以支持比特币了：<https://squareup.com/help/en-us/article/5214-square-market-accepts-bitcoin>
+
+
+
+### Mark Anderssen
 
 Bill Gates
 
