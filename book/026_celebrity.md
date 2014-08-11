@@ -11,21 +11,16 @@ titile: 名人眼中的比特币
 ![](http://media.happycasts.net/pic/peterpic/pg.jpg)
 
 第一个要说的是我最崇拜的 pg，硅谷最成功（我觉得没有之一）的创业孵化器 YC 的创始人，
-成功孵化了像 reddit，airbnb，dropbox，heroku 这些公司，他的网站 http://www.paulgraham.com/ 上面有很多文章是创业者必读的，这些内容也被编成一本书叫做 《黑客与画家》北京这边的书店我以前看到都有卖的。
-大家可以到 YC 的官方论坛 Hacker News 上面跟他讨论问题：<https://news.ycombinator.com/> 就像这里
-
-<https://news.ycombinator.com/item?id=5402424> 有人问到了他对于比特币的看法，下面是他的回答：
+成功孵化了像 reddit，airbnb，dropbox，heroku 这些公司，他的个人网站 <http://www.paulgraham.com/>上面有很多文章是创业者必读的，这些内容也被编成一本书叫做《黑客与画家》，北京这边的书店我以前看到都有卖的。
+大家可以到 YC 的官方论坛 Hacker News 上面跟他讨论问题，就像这里 <https://news.ycombinator.com/item?id=5402424> 有人问到了他对于比特币的看法，下面是他的回答：
 
 > I am very intrigued by Bitcoin.  It has all the signs.
     Paradigm shift, hackers love it, yet it's derided as
     a toy.  Just like microcomputers.
 
-基本上是说：比特币的确很让我着迷。有很多可以改变基本游戏规则的迹象，黑客们喜欢他，同时外行人目前把他当成一个玩具来嘲笑，就像他们当前嘲笑家用计算机一样。
+基本上是说：比特币的确很让我着迷。有很多可以改变基本游戏规则的迹象，黑客们喜欢它，同时外行人目前把它当成一个小儿科的玩具来嘲笑，就像他们当前嘲笑家用计算机一样。
 
-
-这个话说完了，他可能觉得光说不练不过瘾，所以后来在 YC 他又孵了一下新的公司出来叫做 https://coinbase.com/，在比特币圈子里这是个不得了的公司。
-
-
+这个话说完了，他可能觉得光说不练不过瘾，所以后来在 YC 他孵了一个新的公司出来叫做 <https://coinbase.com>，在比特币圈子里这是个不得了的公司。
 
 ### Jack Dorsey
 
