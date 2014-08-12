@@ -18,24 +18,21 @@ title: 名人眼中的比特币
     Paradigm shift, hackers love it, yet it's derided as
     a toy.  Just like microcomputers.
 
-基本上是说：比特币的确很让我着迷。有很多可以改变基本游戏规则的迹象，黑客们喜欢它，同时外行人目前把它当成一个小儿科的玩具来嘲笑，就像他们当前嘲笑家用计算机一样。
+> 比特币的确很让我着迷。有很多可以改变基本游戏规则的迹象，黑客们喜欢它，同时外行人目前把它当成一个小儿科的玩具来嘲笑，就像他们当前嘲笑家用计算机一样。
 
 这个话说完了，他可能觉得光说不练不过瘾，所以后来在 YC 他孵了一个新的公司出来叫做 <https://coinbase.com>，在比特币圈子里这是个不得了的公司。
 
 ### Jack Dorsey
 
-Jack 是 twitter 的创始人，目前他工作在另外一家他创立的公司，叫做 square，这是一家移动支付公司，所以作为业内人士，Jack 的意见是有相当的参考价值的。
+Jack 是 Twitter 的创始人，目前他工作在另外一家他创立的公司，叫做 Square，这是一家移动支付公司，所以作为业内人士，Jack 的意见是有相当的参考价值的。
 
-2011 年的时候他有一个介绍 square 的 idea 的由来的视频 <http://startups.co.uk/jack-dorsey-on-payment-as-a-form-of-communication-video/> 。 其中提到一句话，我觉得特别有启发，他说：“Payment is anothor form of communication"，支付是人们交流沟通的另外一种形式。后来在一次访谈中他发表了他对比特币的看法，视频链接 <https://www.youtube.com/watch?v=0zJe4PUVx3c>
+2011 年的时候他有一个介绍 Square 的 idea 的由来的视频 <http://startups.co.uk/jack-dorsey-on-payment-as-a-form-of-communication-video/> 。 其中提到一句话，我觉得特别有启发，他说：“Payment is anothor form of communication"，支付是人们交流沟通的另外一种形式。后来在一次访谈中他发表了他对比特币的看法，视频链接 <https://www.youtube.com/watch?v=0zJe4PUVx3c>
 
 ![](http://media.happycasts.net/pic/peterpic/jd_youtube.png)
 
 >Bitcoin is a dream for a lot of mathematician，because it represents a fully anonymous currency that can not be trace. I think it does need to be a digital equivalence to cash. Anonymity is really important to our democracy，we value anonymous communication. Currency is another form of a vote. We need to be able to replicate paper-backed currency，bitcoin is a potential answer，it may not be the one, but it will be one.
 
-
-译文：
-
->比特币是很多数学家的一个梦想，它提供了一种不可跟踪的匿名货币。我希望比特币能成为现金的一种替代品。匿名对于我们的民主是非常重要的，我们认为人和人之间的匿名沟通很重要。货币可以说是另一种形式的选票。人们应该有权力去自己弄出纸质的法币的替代品，比特币给出了一种可能的答案。可能答案不是比特币，但是一定会有一个答案的。
+>比特币是很多数学家的一个梦想，它提供了一种不可跟踪的匿名货币。我希望比特币能成为现金的一种替代品。匿名对于我们的民主是非常重要的，我们认为人和人之间的匿名沟通很重要。货币可以说是另一种形式的选票。人们应该有权力去自己弄出纸质法币的替代品，比特币给出了一种可能的答案。可能答案不是比特币，但是一定会有一个答案的。
 
 现在从 Square 的官网上我们看到 Square 现在已经可以支持比特币了：<https://squareup.com/help/en-us/article/5214-square-market-accepts-bitcoin>
 
@@ -46,9 +43,9 @@ Jack 是 twitter 的创始人，目前他工作在另外一家他创立的公司
 
 Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第一个真正被广泛应用的浏览器 Mosiac，之后创立了网景公司。他的总体观点是比特币是像互联网一样会引发一场伟大的变革的，在 <http://knewcoin.com/episodes/38> 中，我曾经翻译过一个他的演讲，里面有比较详细的他的各个论点。
 
-巴菲特是有名的大财主，这个不用介绍了。他有一个著名的观点，就是高科技公司很难去估值，所以他几乎不投资高科技公司的，这个是大家都知道的事情。但是这不妨碍有媒体总是会穷追不舍的问他比特币的相关问题，所以下面是他老人家给出的答案：
+巴菲特是有名的大财主，不用介绍了。他有一个著名的观点，就是高科技公司很难去估值，所以他几乎不投资高科技公司的。这个是大家都知道的事情，但是这不妨碍有媒体总是会穷追不舍的问他比特币的相关问题，所以下面是他老人家给出的答案：
 
->“Stay away. Bitcoin is a mirage. It’s a method of transmitting money. It’s a very effective way of transmitting money and you can do it anonymously and all that. A check is a way of transmitting money, too. Are checks worth a whole lot of money just because they can transmit money? Are money orders? You can transmit money by money orders. People do it. I hope bitcoin becomes a better way of doing it, but you can replicate it a bunch of different ways and it will be. The idea that it has some huge intrinsic value is just a joke in my view.”
+>Stay away. Bitcoin is a mirage. It’s a method of transmitting money. It’s a very effective way of transmitting money and you can do it anonymously and all that. A check is a way of transmitting money, too. Are checks worth a whole lot of money just because they can transmit money? Are money orders? You can transmit money by money orders. People do it. I hope bitcoin becomes a better way of doing it, but you can replicate it a bunch of different ways and it will be. The idea that it has some huge intrinsic value is just a joke in my view.
 
 >不要碰比特币，它就是个海市蜃楼。它是人们转账汇款的一种手段，非常高效，而且是匿名的，可这又怎么样呢。支票也是转账的一个工具，那么支票是不是就因为它可以转账就值很多钱呢？钱本身和汇款单可不能混为一谈。我希望比特币能成为汇款转账的一个更好地手段，但是未来人们也一定会复制出很多类似于比特币的东西来进行汇款，不一定非要用比特币啊。所以在我看来说比特币本身有很大的内在价值就是个笑话。
 
