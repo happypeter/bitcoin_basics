@@ -44,7 +44,7 @@ Jack 是 twitter 的创始人，目前他工作在另外一家他创立的公司
 
 ![](http://media.happycasts.net/pic/peterpic/mark_warren.png)
 
-Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第一个真正被广泛应用的浏览器 Mosiac，之后创立了网景公司。他的总体观点是比特币是像当前的互联网一样是会引发一场伟大的变革的，在 <http://knewcoin.com/episodes/38> 中，我曾经翻译过一个他的演讲，里面有比较详细的他的各个论点。
+Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第一个真正被广泛应用的浏览器 Mosiac，之后创立了网景公司。他的总体观点是比特币是像互联网一样会引发一场伟大的变革的，在 <http://knewcoin.com/episodes/38> 中，我曾经翻译过一个他的演讲，里面有比较详细的他的各个论点。
 
 巴菲特是有名的大财主，这个不用介绍了。他有一个著名的观点，就是高科技公司很难去估值，所以他几乎不投资高科技公司的，这个是大家都知道的事情。但是这不妨碍有媒体总是会穷追不舍的问他比特币的相关问题，所以下面是他老人家给出的答案：
 
@@ -52,7 +52,7 @@ Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第
 
 >不要碰比特币，它就是个海市蜃楼。它是人们转账汇款的一种手段，非常高效，而且是匿名的，可这又怎么样呢。支票也是转账的一个工具，那么支票是不是就因为它可以转账就值很多钱呢？钱本身和汇款单可不能混为一谈。我希望比特币能成为汇款转账的一个更好地手段，但是未来人们也一定会复制出很多类似于比特币的东西来进行汇款，不一定非要用比特币啊。所以在我看来说比特币本身有很大的内在价值就是个笑话。
 
-针对巴菲特的观点，马克安德森不屑一顾：“不懂技术的人通常都是这么批评新技术的，我这辈子听这样的话太多了，所以的新技术都曾经受过类似的批评”。
+针对巴菲特的观点，马克安德森不屑一顾：“不懂技术的人通常都是这么批评新技术的，我这辈子听这样的话太多了，所有的新技术都曾经受过类似的批评”。
 
 
 出处：<http://www.forbes.com/sites/kashmirhill/2014/03/26/warren-buffett-says-bitcoin-is-a-mirage-why-marc-andreessen-thinks-hes-wrong/>
@@ -61,13 +61,16 @@ Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第
 
 ### Bill Gates
 
-http://video.foxbusiness.com/v/2359385547001/#sp=show-clips
+![](http://media.happycasts.net/pic/peterpic/billgates.png)
 
-The foundation is involved in digital money but unlike Bitcoin it would not be anonymous digital money. In Kenya M-pesa is being used for almost half of all transactions. Digital money has low transaction costs which is great for the poor because they need to do financial transactions with small amounts of money. Over the next 5 years I think digital money will catch on in India and parts of Africa and help the poorest a lot.
+比尔盖茨的观点：
 
+>The foundation is involved in digital money but unlike Bitcoin it would not be anonymous digital money. In Kenya M-pesa is being used for almost half of all transactions. Digital money has low transaction costs which is great for the poor because they need to do financial transactions with small amounts of money. Over the next 5 years I think digital money will catch on in India and parts of Africa and help the poorest a lot.
 
-Read more: http://www.businessinsider.com/bill-gates-bitcoin-2014-2#ixzz3A2LnMqCO
+>基金会目前正在搞数字货币，不过我们这个跟比特币不一样的地方是，我们不匿名。在肯尼亚一半的交易都走 M-pesa 。 对于穷人来说，没有什么比低廉的手续费更重要的了，所以这正是数字货币大显身手的时候。未来5年，我觉得数字货币会在印度和非洲大行其道，帮助这些世界上最穷苦的人们。
 
+出处: <http://www.businessinsider.com/bill-gates-bitcoin-2014-2>
 
-### WARREN BUFFETT:
-Stay Away From Bitcoin. It's A Mirage
+### Peter 的总结
+
+我觉得比特币对世界的改变是革命性的，而且这个潮流是不可逆转的。人们一旦学会了飞，那么就不管飞机有多么不安全，人们都不会忘了如何去飞的。不过，不知道最近你有没有听优酷上的《罗辑思维》那个节目，有一期是讲集装箱的，<http://v.youku.com/v_show/id_XNzUyMzA4MTE2.html>，我最大的感触就是，即使是集装箱这么一个很简单同时经济效益又那么明显的东东，要真正普及也要累月经年。所以，比特币的狂热者们也可能对这个普及时间有非常不准确的判断，而吃大亏。
