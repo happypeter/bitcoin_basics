@@ -27,7 +27,7 @@ youtube.com 上搜锁 “Andreas Antonopoulos on Bitcoin | Maker Faire
 类似这样的例子，其实在历史上还有很多的。
 
 
-
+<!--
 Bitcoin is internet of money.
 
 I think I want to talk about bitcoin from the perspective of the misfits, the freaks, people who refused to think the way everybody else think, the people who see a half working elegant technology, and don't look at the half-working, they look at the elegent side, they recognize innovation, and they recognize innovation not a few month or a few years before others, but sometimes a decade before others recognize the innovation. That's going to be the people who make first, and that's a great place to start talking bitcoin.
@@ -50,3 +50,5 @@ guess what happened to UK, they lost the auto mobile industry race, because they
 And what you did not see in the video, at that time the first really practical car that, so they already won the race industrial revolution , and at that time England was a power house of the industry of innovation. and they would win  machine should be defined , and they killed the goods.
 
 That's instructive cause that happened again and again in technology.
+
+-->
