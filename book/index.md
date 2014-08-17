@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="027_andreas_red_flag_act.html">027 英国的红旗法案</a><span> August
+12, 2014</span>
+  </li>
+  <li>
     <a href="026_celebrity.html">026 名人眼中的比特币</a><span> August
 12, 2014</span>
   </li>
