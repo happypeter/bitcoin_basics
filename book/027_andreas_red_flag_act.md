@@ -14,7 +14,7 @@ Andreas Antonopoulos 。他是著名的 blockchain.info 公司的 CSO，也是�
 ![](http://media.happycasts.net/pic/peterpic/andreas_youtube.png)
 
 
-今天这篇文章是翻译他在 2014 年的特律 Makeer Faire 会议上
+今天这篇文章是翻译他在 2014 年的特律 Maker Faire 会议上
 的演讲的第一小部分，主要介绍历史上人们通常对新技术都会持有抵触心理，一个生动的例子是英国汽车业的《红旗法案》，很有意思的一个小故事哦。这里我的内容是忠实于他的原文，但是是用我我自己的口语方式讲出，同时配了一些适当的说明图片。原视频大家可以到 youtube.com 上搜锁 “Andreas Antonopoulos on Bitcoin | Maker Faire
 2014”。下面开始他演讲的正文。
 
