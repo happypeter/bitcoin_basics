@@ -5,7 +5,7 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
-    <a href="027_andreas_linux.html">028 Linux 和 Bitcoin</a><span> August
+    <a href="028_andreas_linux.html">028 Linux 和 Bitcoin</a><span> August
 26, 2014</span>
   </li>
   <li>
