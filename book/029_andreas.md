@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 比特币的技术起源
+title: 比特币技术简史
 ---
 
 在 2014 Maker Faire 上 Andreas 发表了关于比特币的演讲，youtube 上面有完整的视频。在问答环节开始的时候，有观众问到比特币的起源问题，下面是他的回答。
