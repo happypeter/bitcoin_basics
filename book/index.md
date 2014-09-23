@@ -5,6 +5,10 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="031_essence.html">031 通俗比特币</a><span> September
+24, 2014</span>
+  </li>
+  <li>
     <a href="030_under_hood.html">030 比特币底层工作原理</a><span> September
 16, 2014</span>
   </li>
