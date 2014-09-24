@@ -37,7 +37,7 @@ Youtube 上有个视频，The Essence of How Bitcoin Works (Non-Technical) 。�
 
 ![](http://media.happycasts.net/pic/peterpic/radommoney.png)
 
-总结。比特币是一个基于大众协作维护的一个账本的电子货币。发款的时候，就给维护人发一条信息，说明钱要转到哪里，数额是多少。维护人负责检查数字签名，保证信息是账号所有人发出的。各个维护人之间通过投票的方式达成一致。
+总结。比特币是一个基于大众协作维护的账本的电子货币。发款的时候，就给维护人发一条信息，说明钱要转到哪里，数额是多少。维护人负责检查数字签名，保证信息是账号所有人发出的。各个维护人之间通过投票的方式达成一致。
 
 好，就是这些了。更进一步的原理，请参考 [how bitcoin works under the hood](http://knewcoin.com/episodes/50) 。
 
