@@ -1,3 +1,7 @@
+https://github.com/peatio/peatio/blob/master/doc/setup-ubuntu.md
+
+
+
 
 # 貔貅
 
