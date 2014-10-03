@@ -5,40 +5,34 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
-    <a href="031_essence.html">031 通俗比特币</a><span> September
-24, 2014</span>
+    <a href="032_peatio_vps.html">032 貔貅搭建：拥有域名和服务器</a><span> October 4, 2014</span>
   </li>
   <li>
-    <a href="030_under_hood.html">030 比特币底层工作原理</a><span> September
-16, 2014</span>
+    <a href="031_essence.html">031 通俗比特币</a><span> September 24, 2014</span>
   </li>
   <li>
-    <a href="029_andreas_history.html">029 比特币技术简史</a><span> August
-26, 2014</span>
+    <a href="030_under_hood.html">030 比特币底层工作原理</a><span> September 16, 2014</span>
   </li>
   <li>
-    <a href="028_andreas_linux.html">028 Linux 和 Bitcoin</a><span> August
-26, 2014</span>
+    <a href="029_andreas_history.html">029 比特币技术简史</a><span> September 3, 2014</span>
   </li>
   <li>
-    <a href="027_andreas_red_flag_act.html">027 英国的红旗法案</a><span> August
-19, 2014</span>
+    <a href="028_andreas_linux.html">028 Linux 和 Bitcoin</a><span> August 26, 2014</span>
   </li>
   <li>
-    <a href="026_celebrity.html">026 名人眼中的比特币</a><span> August
-12, 2014</span>
+    <a href="027_andreas_red_flag_act.html">027 英国的红旗法案</a><span> August 19, 2014</span>
   </li>
   <li>
-    <a href="025_how_tx_work.html">025 比特币交易是如何工作的</a><span> August
-5, 2014</span>
+    <a href="026_celebrity.html">026 名人眼中的比特币</a><span> August 12, 2014</span>
   </li>
   <li>
-    <a href="024_breakthrough.html">024 比特币是怎样一个技术突破 </a><span>July
-21, 2014</span>
+    <a href="025_how_tx_work.html">025 比特币交易是如何工作的</a><span> August 5, 2014</span>
   </li>
   <li>
-    <a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July
-7, 2014</span>
+    <a href="024_breakthrough.html">024 比特币是怎样一个技术突破 </a><span>July 21, 2014</span>
+  </li>
+  <li>
+    <a href="023_multi_sig.html">023 多重签名，多重安全 </a><span>July 7, 2014</span>
   </li>
   <li>
     <a href="022_seven_habits.html">022 高效比特币人的七个习惯</a><span>June
