@@ -5,6 +5,7 @@ title: 貔貅搭建：拥有域名和服务器
 
 peatio 是一个开源的加密货币交易所。在 github 上可以找到它的 [源代码](https://github.com/peatio/peatio) 。但是要搭建我自己的交易所，除了要有貔貅这样的交易所代码，还要有两个东西才行。第一，要有一台网络服务器，带公网 IP 的。第二，还要有一个好听好记的域名。这一期我就带你去 digitalocean 上买一台服务器，再去 godaddy 上面买一个域名，把域名指向服务器。总之就是要在浩瀚网络空间中，给貔貅安个家。
 
+![](http://media.happycasts.net/pic/peterpic/peatio_vps_domain.png)
 
 
 先来到 digitalocean 申请一个 VPS，首先注册。到 <https://cloud.digitalocean.com/droplets> 页面上可以看到主要的步骤：
