@@ -8,7 +8,9 @@ peatio 是一个开源的加密货币交易所。在 github 上可以找到它�
 ![](http://media.happycasts.net/pic/peterpic/peatio_vps_domain.png)
 
 
-先来到 digitalocean 申请一个 VPS，首先注册。到 <https://cloud.digitalocean.com/droplets> 页面上可以看到主要的步骤：
+### digitalocean 购买服务器
+
+首先注册。到 <https://cloud.digitalocean.com/droplets> 页面上可以看到主要的步骤：
 
 - 确认邮件
 - 到 billing manage payment 下面可以找到 add credit card 的按钮，添加信用卡信息。
@@ -33,7 +35,7 @@ peatio 是一个开源的加密货币交易所。在 github 上可以找到它�
   https://github.com/peatio/peatio/issues/281 -->
 
 
-# godaddy 上面购买域名
+### godaddy 上面购买域名
 
 可以用支付宝。
 
