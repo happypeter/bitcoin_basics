@@ -1,7 +1,8 @@
-https://github.com/peatio/peatio/blob/master/doc/setup-ubuntu.md
+- deploy peatio
+  - https://github.com/happypeter/bitcoin_basics/issues/40
 
-
-
+- minimum ram: 4G
+  https://github.com/peatio/peatio/issues/281
 
 # 貔貅
 
