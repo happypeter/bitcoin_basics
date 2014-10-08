@@ -39,12 +39,11 @@ godaddy 上面是可以用支付宝的，当然也可以用信用卡或其他方
 
 在 godaddy 我的个人账户页面上，点击 domains ，找到要绑定的域名 peterandbillie.com 然后 lanuch action 打开设置页面。其实这里要做的就是一个事情，把 nameservers 改为使用 DO 的域名服务器。
 
-![](http://media.happycasts.net/pic/peterpic/do_dns.png)
-
 ### 回到 digitalocean 设置域名服务器
 
 到 DNS 选项卡下，添加 domain，填入主机名 redcat 以及它的 IP，然后 name 这一项填入 `peterandbille.com` ，点击 create domain 就可以了。
 
+![](http://media.happycasts.net/pic/peterpic/do_dns.png)
 
 过了3个小时，到终端中执行
 
