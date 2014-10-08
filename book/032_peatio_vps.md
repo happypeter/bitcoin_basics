@@ -10,7 +10,7 @@ peatio 是一个开源的加密货币交易所。在 github 上可以找到它�
 
 ### digitalocean 购买服务器
 
-首先注册。到 <https://cloud.digitalocean.com/droplets> 页面上可以看到主要的步骤。到 billing ---> manage payment 下面可以找到 add credit card 的按钮，添加信用卡信息。之后，就可以来创建一个 droplet ，也就是一个服务器了。点击创建按钮。这样可以首先来设置服务器的主机名，填一个自己喜欢的就好，比如 happycat 。
+首先注册。到 <https://cloud.digitalocean.com/droplets> 页面上可以看到主要的步骤。到 billing ---> manage payment 下面可以找到 add credit card 的按钮，添加信用卡信息。之后，就可以来创建一个 droplet ，也就是一个服务器了。点击创建按钮。这样可以首先来设置服务器的主机名，填一个自己喜欢的就好，比如 redcat 。
 
 [peatio 官方文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md)建议的操作系统为 ubuntu 14.04，我这里使用一个64位版本 。同时，运行 peatio 建议的内存大小是4G 。选择新加坡机房，国内用会比其他地方的稍微快一些。
 
@@ -27,20 +27,30 @@ ping digitalocean sinapore 120ms  ping linode tokyp 80ms
   https://github.com/peatio/peatio/issues/281 -->
 
 
-### godaddy 上面购买域名
+### godaddy  购买域名并更改域名服务器
 
-可以用支付宝。
+godaddy 上面是可以用支付宝的，当然也可以用信用卡或其他方式支付。购买过程很简单，不做演示了。下面来看看，怎样把这个域名指向我刚才申请的服务器。
 
-- 设置域名指向。
-  - godaddy -> peterandbillie.com -> action -> nameservers
-    - use custom nameserver : ns1.digitalocean.com
+有了服务器之后，还需要给它绑定一个域名。参考 [如何给一个 VPS 绑定域名](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean) 。文中提到了 DO 的域名服务器是这三个
 
-  - digitalocean
+    ns1.digitalocean.com
+    ns2.digitalocean.com
+    ns3.digitalocean.com
+
+在 godaddy 我的个人账户页面上，点击 domains ，找到要绑定的域名 peterandbillie.com 然后 lanuch action 打开设置页面。其实这里要做的就是一个事情，把 nameservers 改为使用 DO 的域名服务器。
+
+![](http://media.happycasts.net/pic/peterpic/do_dns.png)
+
+### 回到 digitalocean 设置域名服务器
+
+到 DNS 选项卡下，添加 domain，填入主机名 redcat 以及它的 IP，然后 name 这一项填入 `peterandbille.com` ，点击 create domain 就可以了。
 
 
-# 设置 DNS 绑定域名
+过了3个小时，到终端中执行
 
-[如何给一个 VPS 绑定域名](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean)
+    ping peterandbillie.com
+
+可以看到域名以及指向服务器的 IP 了，Yeah...
 
 <!-- 刚刚到 DO 添加 peterandbillie.com
     现在是下午四点半，看看多长时间能生效？
