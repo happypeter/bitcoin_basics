@@ -3,8 +3,7 @@ layout: book
 title: 貔貅搭建：基本部署过程
 ---
 
-前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。文档上的内容都是精心整理过的，直接执行都是可以成功的。内容很多，这里我先把要让程序跑起来的各个基本工具的安装和配置操作一下。其他的工具，等后面演示网站相应部分的功能时再去安装，这样比较能直观的看出它们各自的作用。
-
+前面已经申请了服务器也绑定了域名，本期视频里面，我就来就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。文档上的内容都是精心整理过的，直接执行都是可以成功的。内容很多，本视频中我先把要让程序跑起来的各个基本工具的安装和配置操作一下。其他的工具，等后面演示网站相应部分的功能时再去安装，这样比较能直观的看出它们各自的作用。
 
 本期中会完成下面步骤：
 
@@ -19,7 +18,6 @@ title: 貔貅搭建：基本部署过程
 
     5. Install RabbitMQ
     6. Install Bitcoind
-    8. Install JavaScript Runtime
     9. Install ImageMagick
 
 
@@ -79,11 +77,6 @@ title: 貔貅搭建：基本部署过程
 
 ### 安装服务器及其他工具
 
-下面这些暂不介绍
-
-    5. Install RabbitMQ -- 系统上各个部分功能模块之间进行通信，后面再介绍
-    6. Install Bitcoind -- 提供比特币相关的各种服务，本视频中暂不介绍
-
 执行
 
     7. Installing Nginx & Passenger
@@ -92,11 +85,6 @@ title: 貔貅搭建：基本部署过程
 <!-- 不需要 passenger-install-nginx-module 这一步
 按照 https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md
 安装 passenger 定制过的 nginx -->
-
-
-暂时不弄
-
-    9. Install ImageMagick #
 
 
 ### 配置数据库和服务器
@@ -133,7 +121,6 @@ database.yml 的 `production` 部分改为：
 这样打来浏览器访问 peterandbilli.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
 
 ![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
-
 
 ### 结语
 
