@@ -8,6 +8,8 @@ title: 貔貅搭建：基本部署过程
 
 ### 安装 ruby 语言和数据库
 
+![](http://media.happycasts.net/pic/peterpic/ruby-lang.png)
+
 按照文档上的这几步直接执行就可以了，没有问题
 
     1. Setup deploy user
@@ -33,12 +35,20 @@ title: 貔貅搭建：基本部署过程
 
 ### 安装配置服务器
 
-- nodejs/imagemagick 都装上吧
 
-- pusher 相关的设置要是不改，后面运行不起来吧
-  - 不行，必须得有
+![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
 
-- bitcoind 的设置，先不弄
+执行
+
+    7. Installing Nginx & Passenger
+    8. Install JavaScript Runtime
+    9. Install ImageMagick
+    10. Setup production environment variable
+
+下面修改一下相应配置。
+
+
+
 
 - config database.yml 这个是必须改了
   - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器
