@@ -3,8 +3,9 @@ layout: book
 title: 貔貅搭建：基本部署过程
 ---
 
-前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。
+前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。文档上的内容都是精心整理过的，直接执行都是可以成功的。内容很多，这里我先把要让程序跑起来的各个基本工具的安装和配置操作一下。其他的工具，等后面演示网站相应部分的功能时再去安装，这样比较能直观的看出它们各自的作用。
 
+mysql 安装时需要设置 root 用户的密码，我的设为 111111 。当然建议你选择一个更为安全的。
 
 ### 安装 ruby 语言和数据库
 
@@ -21,80 +22,69 @@ title: 貔貅搭建：基本部署过程
 
 <!-- redis 必须得安装，不然后面要报错 -->
 
-### 安装后台工具
+### 安装服务器及其他工具
 
-下面安装
+下面这些暂不介绍
 
-    5. Install RabbitMQ -- 系统上各个部分功能模块之间进行通信
-    6. Install Bitcoind -- 提供比特币相关的各种服务
+    5. Install RabbitMQ -- 系统上各个部分功能模块之间进行通信，后面再介绍
+    6. Install Bitcoind -- 提供比特币相关的各种服务，本视频中暂不介绍
+
+执行
+
+    7. Installing Nginx & Passenger
+    8. Install JavaScript Runtime # 这个是 rails 程序自己要用的
 
 <!-- 不需要 passenger-install-nginx-module 这一步
 按照 https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md
 安装 passenger 定制过的 nginx -->
 
 
-### 安装配置服务器
+暂时不弄
+
+    9. Install ImageMagick #
 
 
-![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
+### 配置数据库和服务器
 
-执行
+也就是这一部分
 
-    7. Installing Nginx & Passenger
-    8. Install JavaScript Runtime
-    9. Install ImageMagick
     10. Setup production environment variable
 
-下面修改一下相应配置。
+database.yml 的 `production` 部分改为：
 
+    production:
+      <<: *defaults
+      database: peatio_production
+      password: 111111
 
+<!-- - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器 后续 rake 命令就可以成功-->
 
+启用后台 deamons 和 “SSL Certificate setting” 先不弄，后面的视频中再演示。 bitcoind 和 Liability Proof 相关操作也一样。
 
-- config database.yml 这个是必须改了
-  - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器
-
-        bundle exec rake db:setup
-
-     就可以成功
-
-- 不启动 deamon ，行不行？
-  - 可以
-  - 对应的是一个具体功能，网站的基本运行用不着，这个等到相应的部分再安装
-
-- SSL Certificate setting 这个先不弄
-  - 可以
-
-- passenger & nginx
-
-- Liability Proof 是啥玩意？
-  - 先不弄
-
-- 现在 nginx 已经正常运行了，但是报错了，到哪里看 log 呢？
-  - 就直接看 log/production.log 就行了
-  - redis 没装造成的
-
-- 试着来注册
-  - 又 error 了
-  - amqp_queue 的问题，这个是个大话题了，后面再讲吧
-
----
-
-上面那些“先不装”的东西，步骤很麻烦吗？不然的话，要不给装上
-？
-
+<!--
 - bitcoind
-  - 整个过程看起来是没有问题的
+  - 第6步中，填入
     - happypeter
     - p111111
 
 - Setup bitcoind rpc endpoint
   - vim config/currencies.yml
 
-      rpc: http://happypeter:p111111@127.0.0.1:18332
+      rpc: http://happypeter:p111111@127.0.0.1:18332 -->
 
--  deamon start done
+准备配置文件，运行 `bin/init_config` 。 Pusher 也是后面再细聊，不过这里的配置文件先修改一下，不然后面程序会运行不起来。
+<!-- 缺少 pusher 配置 rake db:setup 这一步会报错 -->
 
-- 总之，这些步骤是都能执行成功的。
-- 注册，amqp_queue 没有报错，但是我有被重定向到了 http://peatio.dev/settings
+这样打来浏览器访问 peterandbilli.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
+
+![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
+
+
+### 结语
+
+基本程序运行起来了，不代表所有的功能有已经能够正常使用了，后面的视频中，我会针对具体的功能点来作专门的讲解，敬请期待。
+
+<!-- - 注册，amqp_queue 没有报错，但是我有被重定向到了 http://peatio.dev/settings
   -  shit, why this?
     - https://github.com/peatio/peatio/issues/288
+ -->
