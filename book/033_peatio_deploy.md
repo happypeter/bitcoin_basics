@@ -5,14 +5,31 @@ title: 貔貅搭建：基本部署过程
 
 前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。文档上的内容都是精心整理过的，直接执行都是可以成功的。内容很多，这里我先把要让程序跑起来的各个基本工具的安装和配置操作一下。其他的工具，等后面演示网站相应部分的功能时再去安装，这样比较能直观的看出它们各自的作用。
 
+
+本期中会完成下面步骤：
+
+    1. Setup deploy user
+    2. Install Ruby
+    3. Install MySQL
+    4. Install Redis
+    7. Install Nginx with Passenger
+    10. Configure Peatio # 相关的部分
+
+暂时不做：
+
+    5. Install RabbitMQ
+    6. Install Bitcoind
+    8. Install JavaScript Runtime
+    9. Install ImageMagick
+
+
 <!-- 本文档中把都运行了那些具体的命令都记录一下吧，便于后面对照，或者重装服务器的话，复现整个场景 -->
 
-mysql 安装时需要设置 root 用户的密码，我的设为 111111 。当然建议你选择一个更为安全的。
+除非特殊提出，下面的操作步骤是和文档上 100% 一样的。
 
 ### 安装 ruby 语言和数据库
 
 ![](http://media.happycasts.net/pic/peterpic/ruby-lang.png)
-
 
 首先执行 `1. Setup deploy user` 中的内容
 
@@ -44,13 +61,12 @@ mysql 安装时需要设置 root 用户的密码，我的设为 111111 。当然
     gem install bundler
     rbenv rehash
 
-以上步骤和文档上是 100% 一致的。
 
 下面安装数据库 `3. Install MySQL`
 
     sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
 
-过程中设置 mysql 的 root 用户密码为：111111
+过程中设置 mysql 的 root 用户密码为：111111 。当然建议你选择一个更为安全的。
 
 
 再来 `4. Install Redis`
