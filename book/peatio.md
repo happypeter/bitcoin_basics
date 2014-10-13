@@ -1,8 +1,3 @@
-- deploy peatio
-  - https://github.com/happypeter/bitcoin_basics/issues/40
-
-- minimum ram: 4G
-  https://github.com/peatio/peatio/issues/281
 
 # 貔貅
 
@@ -10,8 +5,6 @@
 为配合国家相关法令条例，请您正确输入信息，进行身份认证，身份认证未完成将不能在网站进行任何操作。
 
 填个身份证号直接就成功啦
-
-
 给大家跑通一条线把：
 
 买：
