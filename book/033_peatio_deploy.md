@@ -5,20 +5,59 @@ title: 貔貅搭建：基本部署过程
 
 前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。文档上的内容都是精心整理过的，直接执行都是可以成功的。内容很多，这里我先把要让程序跑起来的各个基本工具的安装和配置操作一下。其他的工具，等后面演示网站相应部分的功能时再去安装，这样比较能直观的看出它们各自的作用。
 
+<!-- 本文档中把都运行了那些具体的命令都记录一下吧，便于后面对照，或者重装服务器的话，复现整个场景 -->
+
 mysql 安装时需要设置 root 用户的密码，我的设为 111111 。当然建议你选择一个更为安全的。
 
 ### 安装 ruby 语言和数据库
 
 ![](http://media.happycasts.net/pic/peterpic/ruby-lang.png)
 
-按照文档上的这几步直接执行就可以了，没有问题
 
-    1. Setup deploy user
-    2. Install Ruby
-    3. Install MySQL
-    4. Install Redis
+首先执行 `1. Setup deploy user` 中的内容
 
-<!--  包括 rbenv 等等就都不细说了，懂的人自然懂，不懂的人说也更晕 -->
+    sudo adduser deploy
+    sudo usermod -a -G sudo deploy
+    su deploy
+
+接下来，执行 `2. Install Ruby`
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install git-core curl zlib1g-dev build-essential \
+                         libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 \
+                         libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties
+
+    cd
+    git clone git://github.com/sstephenson/rbenv.git .rbenv
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    exec $SHELL
+
+    git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+    exec $SHELL
+
+    rbenv install 2.1.2
+    rbenv global 2.1.2
+    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+    gem install bundler
+    rbenv rehash
+
+以上步骤和文档上是 100% 一致的。
+
+下面安装数据库 `3. Install MySQL`
+
+    sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
+
+过程中设置 mysql 的 root 用户密码为：111111
+
+
+再来 `4. Install Redis`
+
+    sudo apt-add-repository -y ppa:rwky/redis
+    sudo apt-get update
+    sudo apt-get install redis-server
 
 <!-- redis 必须得安装，不然后面要报错 -->
 
