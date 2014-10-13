@@ -1,22 +1,37 @@
 ---
 layout: book
-title: 貔貅：基本部署
+title: 貔貅搭建：基本部署过程
 ---
 
-[官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 上的步骤拷贝粘贴到终端中执行就好了。不用细说。
+前面已经申请了服务器，本期视频里面，就把 peatio 代码部署到服务器之上。参考资料是 [官方给的部署文档](https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md) 。
 
-用几个 slide 把内容隔开：
 
-- 安装 ruby 语言
-  - 包括 rbenv 等等就都不细说了，懂的人自然懂，不懂的人说也更晕
+### 安装 ruby 语言和数据库
 
-- redis 必须得安装，不然后面要报错
+按照文档上的这几步直接执行就可以了，没有问题
 
-- 这样就到了 “Nginx & Passenger”
+    1. Setup deploy user
+    2. Install Ruby
+    3. Install MySQL
+    4. Install Redis
+
+<!--  包括 rbenv 等等就都不细说了，懂的人自然懂，不懂的人说也更晕 -->
+
+<!-- redis 必须得安装，不然后面要报错 -->
+
+### 安装后台工具
+
+下面安装
+
+    5. Install RabbitMQ -- 系统上各个部分功能模块之间进行通信
+    6. Install Bitcoind -- 提供比特币相关的各种服务
 
 <!-- 不需要 passenger-install-nginx-module 这一步
 按照 https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md
 安装 passenger 定制过的 nginx -->
+
+
+### 安装配置服务器
 
 - nodejs/imagemagick 都装上吧
 
@@ -56,3 +71,20 @@ title: 貔貅：基本部署
 
 上面那些“先不装”的东西，步骤很麻烦吗？不然的话，要不给装上
 ？
+
+- bitcoind
+  - 整个过程看起来是没有问题的
+    - happypeter
+    - p111111
+
+- Setup bitcoind rpc endpoint
+  - vim config/currencies.yml
+
+      rpc: http://happypeter:p111111@127.0.0.1:18332
+
+-  deamon start done
+
+- 总之，这些步骤是都能执行成功的。
+- 注册，amqp_queue 没有报错，但是我有被重定向到了 http://peatio.dev/settings
+  -  shit, why this?
+    - https://github.com/peatio/peatio/issues/288

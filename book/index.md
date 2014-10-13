@@ -5,6 +5,9 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="033_peatio_deploy.html">033 貔貅搭建：基本部署过程</a><span> October 14, 2014</span>
+  </li>
+  <li>
     <a href="032_peatio_vps.html">032 貔貅搭建：拥有域名和服务器</a><span> October 4, 2014</span>
   </li>
   <li>
