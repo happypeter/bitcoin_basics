@@ -82,6 +82,33 @@ title: 貔貅搭建：基本部署过程
     7. Installing Nginx & Passenger
     8. Install JavaScript Runtime # 这个是 rails 程序自己要用的
 
+
+依照文档，依次执行：
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 561F9B9CAC40B2F7
+    sudo apt-get install apt-transport-https ca-certificates
+    sudo add-apt-repository 'deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main'
+    sudo apt-get update
+    sudo apt-get install nginx-extras passenger
+
+之后，执行
+
+sudo vim /etc/nginx/nginx.conf
+
+将下面两个去掉注释：
+
+    passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
+    passenger_ruby /usr/bin/ruby;
+
+第二行替换为：
+
+    passenger_ruby /home/deploy/.rbenv/shims/ruby;
+
+
+最后来安装 nodejs
+
+    sudo apt-get install nodejs
+
 <!-- 不需要 passenger-install-nginx-module 这一步
 按照 https://github.com/peatio/peatio/blob/master/doc/deploy-ubuntu.md
 安装 passenger 定制过的 nginx -->
@@ -93,7 +120,39 @@ title: 貔貅搭建：基本部署过程
 
     10. Setup production environment variable
 
-database.yml 的 `production` 部分改为：
+执行：
+
+echo "export RAILS_ENV=production" >> ~/.bashrc
+source ~/.bashrc
+mkdir -p ~/peatio
+git clone git://github.com/peatio/peatio.git ~/peatio/current
+cd peatio/current
+
+＃ Install dependency gems
+bundle install --without development test --path vendor/bundle
+
+然后准备配置文件：
+
+    bin/init_config
+
+下面修改 pusher 的配置（这个是临时性的，但是如果不改后面执行 rake 的时候就会报错）：
+
+    vim config/application.yml
+
+将这几行：
+
+  # PUSHER_APP: 65910
+  # PUSHER_KEY: 50d404c35db92d736a57
+  # PUSHER_SECRET: 75d6e6685209cc60cc4d
+
+  PUSHER_APP: YOUR_PUSHER_APP
+  PUSHER_KEY: YOUR_PUSHER_KEY
+  PUSHER_SECRET: YOUR_PUSHER_SECRET
+
+前三行注释去掉，后三行删掉。
+
+
+接下来，把 database.yml 的 `production` 部分改为：
 
     production:
       <<: *defaults
@@ -101,8 +160,6 @@ database.yml 的 `production` 部分改为：
       password: 111111
 
 <!-- - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器 后续 rake 命令就可以成功-->
-
-启用后台 deamons 和 “SSL Certificate setting” 先不弄，后面的视频中再演示。 bitcoind 和 Liability Proof 相关操作也一样。
 
 <!--
 - bitcoind
@@ -115,8 +172,19 @@ database.yml 的 `production` 部分改为：
 
       rpc: http://happypeter:p111111@127.0.0.1:18332 -->
 
-准备配置文件，运行 `bin/init_config` 。 Pusher 也是后面再细聊，不过这里的配置文件先修改一下，不然后面程序会运行不起来。
 <!-- 缺少 pusher 配置 rake db:setup 这一步会报错 -->
+
+后面的几步设置都不做，只要执行 passenger 相关的这几个命令：
+
+    sudo rm /etc/nginx/sites-enabled/default
+    sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
+    sudo service nginx restart
+
+但是最后重启 nginx 会失败，打开 `config/nginx.conf` 文件，临时性的把 SSL 相关的那几行删掉，再次运行
+
+    sudo service nginx restart
+
+就成功了。
 
 这样打来浏览器访问 peterandbilli.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
 
@@ -125,21 +193,3 @@ database.yml 的 `production` 部分改为：
 ### 结语
 
 基本程序运行起来了，不代表所有的功能有已经能够正常使用了，后面的视频中，我会针对具体的功能点来作专门的讲解，敬请期待。
-
-<!-- - 注册，amqp_queue 没有报错，但是我有被重定向到了 http://peatio.dev/settings
-  -  shit, why this?
-    - https://github.com/peatio/peatio/issues/288
- -->
-
-<!--  添加 peatio.cong 之后 nginx 重启失败
-deploy@redcat:~$ sudo service nginx restart
- * Restarting nginx nginx                                                                                                                              [ OK ]
-deploy@redcat:~$ sudo rm /etc/nginx/sites-enabled/default
-deploy@redcat:~$ sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
-deploy@redcat:~$ sudo service nginx restart
- * Restarting nginx nginx                                                                                                                              [fail]
-
- deploy@redcat:/etc/nginx/conf.d$ nginx -v
-nginx version: nginx/1.6.2
-deploy@redcat:/etc/nginx/conf.d$ uname -a
-Linux redcat 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux -->
