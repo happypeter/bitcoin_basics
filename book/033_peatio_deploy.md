@@ -93,7 +93,7 @@ title: 貔貅搭建：基本部署过程
 
 之后，执行
 
-sudo vim /etc/nginx/nginx.conf
+    sudo vim /etc/nginx/nginx.conf
 
 将下面两个去掉注释：
 
@@ -122,14 +122,14 @@ sudo vim /etc/nginx/nginx.conf
 
 执行：
 
-echo "export RAILS_ENV=production" >> ~/.bashrc
-source ~/.bashrc
-mkdir -p ~/peatio
-git clone git://github.com/peatio/peatio.git ~/peatio/current
-cd peatio/current
+    echo "export RAILS_ENV=production" >> ~/.bashrc
+    source ~/.bashrc
+    mkdir -p ~/peatio
+    git clone git://github.com/peatio/peatio.git ~/peatio/current
+    cd peatio/current
 
-＃ Install dependency gems
-bundle install --without development test --path vendor/bundle
+    ＃ Install dependency gems
+    bundle install --without development test --path vendor/bundle
 
 然后准备配置文件：
 
@@ -141,13 +141,13 @@ bundle install --without development test --path vendor/bundle
 
 将这几行：
 
-  # PUSHER_APP: 65910
-  # PUSHER_KEY: 50d404c35db92d736a57
-  # PUSHER_SECRET: 75d6e6685209cc60cc4d
+    # PUSHER_APP: 65910
+    # PUSHER_KEY: 50d404c35db92d736a57
+    # PUSHER_SECRET: 75d6e6685209cc60cc4d
 
-  PUSHER_APP: YOUR_PUSHER_APP
-  PUSHER_KEY: YOUR_PUSHER_KEY
-  PUSHER_SECRET: YOUR_PUSHER_SECRET
+    PUSHER_APP: YOUR_PUSHER_APP
+    PUSHER_KEY: YOUR_PUSHER_KEY
+    PUSHER_SECRET: YOUR_PUSHER_SECRET
 
 前三行注释去掉，后三行删掉。
 
