@@ -130,3 +130,16 @@ database.yml 的 `production` 部分改为：
   -  shit, why this?
     - https://github.com/peatio/peatio/issues/288
  -->
+
+<!--  添加 peatio.cong 之后 nginx 重启失败
+deploy@redcat:~$ sudo service nginx restart
+ * Restarting nginx nginx                                                                                                                              [ OK ]
+deploy@redcat:~$ sudo rm /etc/nginx/sites-enabled/default
+deploy@redcat:~$ sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
+deploy@redcat:~$ sudo service nginx restart
+ * Restarting nginx nginx                                                                                                                              [fail]
+
+ deploy@redcat:/etc/nginx/conf.d$ nginx -v
+nginx version: nginx/1.6.2
+deploy@redcat:/etc/nginx/conf.d$ uname -a
+Linux redcat 3.13.0-32-generic #57-Ubuntu SMP Tue Jul 15 03:51:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux -->
