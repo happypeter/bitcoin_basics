@@ -157,6 +157,10 @@ title: 貔貅搭建：基本部署过程
       database: peatio_production
       password: 111111
 
+运行命令创建数据库
+
+    bundle exec rake db:setup
+
 <!-- - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器 后续 rake 命令就可以成功-->
 
 <!--
