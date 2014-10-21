@@ -161,6 +161,10 @@ title: 貔貅搭建：基本部署过程
 
     bundle exec rake db:setup
 
+编辑 assets
+
+    bundle exec rake assets:precompile
+
 <!-- - 修改 push 在 application.yml 和 这个 database.yml 的数据之后，不用重启服务器 后续 rake 命令就可以成功-->
 
 <!--
