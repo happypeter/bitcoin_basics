@@ -161,7 +161,7 @@ title: 貔貅搭建：基本部署过程
 
     bundle exec rake db:setup
 
-编辑 assets
+编译 assets
 
     bundle exec rake assets:precompile
 
