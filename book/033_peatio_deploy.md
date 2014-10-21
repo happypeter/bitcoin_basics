@@ -184,7 +184,7 @@ title: 貔貅搭建：基本部署过程
 
 就成功了。
 
-这样打来浏览器访问 peterandbilli.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
+这样打来浏览器访问 peterandbillie.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
 
 ![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
 
