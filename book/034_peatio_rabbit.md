@@ -36,7 +36,7 @@ application.yml 文件中填入
 
 ### 再来实现后台异步发送邮件
 
-异步操作是这样一个流程：
+异步操作是这样一个流程：https://github.com/happypeter/bitcoin_basics/issues/41
 
 【图]
 
@@ -46,6 +46,12 @@ application.yml 文件中填入
   - 涉及到了 rabbitmq_management 回头介绍一下使用
 
 - 启动 daemons
+
+可以使用
+
+    ps aux|grep peatio
+
+来查看后台进程起来没有。
 
 
 
