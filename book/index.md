@@ -5,6 +5,9 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
+    <a href="034_peatio_async_mailer.html">034 貔貅搭建：邮件发送机制</a><span> October 23, 2014</span>
+  </li>
+  <li>
     <a href="033_peatio_deploy.html">033 貔貅搭建：基本部署过程</a><span> October 14, 2014</span>
   </li>
   <li>
