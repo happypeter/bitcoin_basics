@@ -3,49 +3,105 @@ layout: book
 title: 貔貅搭建：邮件发送机制
 ---
 
-好书接上文。前面基本跑起来了 peatio，但是这不表示每个功能都能用了。所有这次继续以让不能用的功能变得能用为主线，来演示搭建貔貅的过程。
+好书接上文。前面基本跑起来了 peatio，但是这不表示每个功能都能用了。所有这次继续以让不能用的功能变得能用为主线，来以功能为单位继续演示搭建貔貅的过程。
 
 
-创建用户，tail -f 报错
+创建用户，`tail -f log/production.log` 报错
 
-    E, [2014-10-22T03:17:11.904023 #4676] ERROR -- : Could not establish TCP connection to 127.0.0.1:5672:
-    E, [2014-10-22T03:17:12.023875 #4676] ERROR -- : Unable to enqueue :mailer: Could not establish TCP connection to 127.0.0.1:5672: , fallback to synchronous mail delivery
-    I, [2014-10-22T03:17:12.042747 #4676]  INFO -- : Completed 500 Internal Server Error in 436ms
-    F, [2014-10-22T03:17:12.047003 #4676] FATAL -- :
-    ArgumentError (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    E, [2014-10-23T04:36:09.680510 #11084] ERROR -- : Could not establish TCP connection to 127.0.0.1:5672:
+    E, [2014-10-23T04:36:09.739548 #11084] ERROR -- : Unable to enqueue :mailer: Could not establish TCP connection to 127.0.0.1:5672: , fallback to synchronous mail delivery
+    I, [2014-10-23T04:36:09.761065 #11084]  INFO -- :   Rendered token_mailer/activation.text.erb (1.5ms)
+    I, [2014-10-23T04:36:09.821529 #11084]  INFO -- :
+    Sent mail to aa@aa.com (56.5ms)
+    I, [2014-10-23T04:36:09.826371 #11084]  INFO -- : Completed 500 Internal Server Error in 289ms
+    F, [2014-10-23T04:36:09.829332 #11084] FATAL -- :
+    SocketError (getaddrinfo: Name or service not known):
+      app/models/amqp_queue.rb:94:in `deliver!'
+      app/models/amqp_queue.rb:88:in `rescue in deliver'
+      app/models/amqp_queue.rb:84:in `deliver'
 
 
 ### 先来保证同步的可以发出去
 
-到 production.rb 文件中
+报错信息中可以看出是邮件的问题，所以先来配置文件。我这里选择的服务是 mailgun 的免费服务，当然 mailgun 对国内的 qq 邮箱支持不太好，所以可能你需要选择国内的某个邮件服务。
+
+<!--  开发模式下调试邮件有技巧
+
+https://github.com/peatio/peatio/issues/170
+
+If it is running under development mode, it would not sending mail out, but you can review all sent mail through browser and the url is /mails
+
+ -->
+
 
 application.yml 文件中填入
 
-      SMTP_PORT: 587
-      SMTP_DOMAIN: sandbox591c991b6ae54699941132d085beb2ed.mailgun.org
+      # below settings only in production env
+      # system notify mail settings
+      # --------------------------------------------------------------
+      SMTP_DOMAIN: peterandbillie.com
       SMTP_ADDRESS: smtp.mailgun.org
-      SMTP_USERNAME: postmaster@sandbox591c991b6ae54699941132d085beb2ed.mailgun.org
-      SMTP_PASSWORD: 1xxxxxxxxd1e802d9c742016ea77e0
+      SMTP_USERNAME: postmaster@peterandbillie.com
+      SMTP_PASSWORD: e748325xxxxxxxxxa6d79b8f1cfbc
+      SMTP_PORT: 587
 
       SYSTEM_MAIL_FROM: system@peterandbillie.com
       SYSTEM_MAIL_TO: group@peterandbillie.com
 
-<!-- SMTP_PASSWORD: 131e1421ad1e80322d9c742016ea77e0 -->
+<!--
+production.rb 中还用到了：
+
+:port                 => ENV["SMTP_PORT"],
+
+但是 application.yml 中没有这个环境变量，得给他们提一个 Bug
+
+-->
 
 
+另外还要填写
+
+      URL_HOST: peterandbillie.com
+
+这些变量都会在 production.rb 的 mailer 设置中用到。 重启服务器
+
+    touch tmp/restart.txt
+
+这次收到邮件了。
+
+
+
+<!--
+     alias cleandb="bundle exec rake db:reset db:migrate"
+ -->
+
+<!--
+mailgun/peterandbillie.com
+SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
+-->
+
+不过这样发送虽然成功了，用户体验不太好，用户到等待，而且在 log 中也可以看到
+
+    E, [2014-10-23T05:11:20.434603 #12150] ERROR -- : Could not establish TCP connection to 127.0.0.1:5672:
+    E, [2014-10-23T05:11:20.568388 #12150] ERROR -- : Unable to enqueue :mailer: Could not establish TCP connection to 127.0.0.1:5672: , fallback to synchronous mail delivery
+    I, [2014-10-23T05:11:20.611862 #12150]  INFO -- :   Rendered token_mailer/activation.text.erb (3.0ms)
+
+所以，世界本应是异步的，所以进入下一步。
 
 ### 再来实现后台异步发送邮件
 
-异步操作是这样一个流程：https://github.com/happypeter/bitcoin_basics/issues/41
+异步操作是这样一个流程：<!-- https://github.com/happypeter/bitcoin_basics/issues/41 -->
 
-【图]
+![](http://media.happycasts.net/pic/peterpic/async_mail.png)
 
+主要是两步：
 
-- 安装 rabbitmq
-  - 就是官方文档上的步骤
+第一步，安装 rabbitmq 就是按照 [官方文档上的步骤](https://github.com/peatio/peatio/blob/stable/doc/deploy-ubuntu.md#5-install-rabbitmq) 装好之后
+
   - 涉及到了 rabbitmq_management 回头介绍一下使用
+  参考 <https://www.rabbitmq.com/management-cli.html>
 
-- 启动 daemons
+
+第二步，启动 daemons
 
 可以使用
 
@@ -57,3 +113,4 @@ application.yml 文件中填入
 
 
 
+<!-- https://github.com/peatio/peatio/issues/298 can be helpful for future ep -->
