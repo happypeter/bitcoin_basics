@@ -104,9 +104,10 @@ SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 
 第二步，启动 daemons
 
-不必全部启动，只启动邮件通知相关的那个就行
 
-    bundle exec rake daemon:notification:start
+run:
+
+    bundle exec rake daemons:start
 
 可以使用
 
