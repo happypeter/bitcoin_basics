@@ -93,15 +93,20 @@ SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 
 ![](http://media.happycasts.net/pic/peterpic/async_mail.png)
 
-主要是两步：
+主要需要两个操作：
 
 第一步，安装 rabbitmq 就是按照 [官方文档上的步骤](https://github.com/peatio/peatio/blob/stable/doc/deploy-ubuntu.md#5-install-rabbitmq) 装好之后
 
-  - 涉及到了 rabbitmq_management 回头介绍一下使用
-  参考 <https://www.rabbitmq.com/management-cli.html>
+    ps aux|grep rabbitmq
+
+看到相应的进程正在运行，那这一步就完事了。
 
 
 第二步，启动 daemons
+
+不必全部启动，只启动邮件通知相关的那个就行
+
+    bundle exec rake daemon:notification:start
 
 可以使用
 
@@ -109,8 +114,13 @@ SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 
 来查看后台进程起来没有。
 
+全部做好后，清空一下数据库
 
+    bundle exec rake db:reset db:migrate
 
+再次使用 happypeter1983@gmail.com 来注册一下。这次反应就快多了。
 
+到邮箱之中，打开邮件完成一下激活，操作没有问题。
 
+好，这一集就是这些了，拜拜！
 <!-- https://github.com/peatio/peatio/issues/298 can be helpful for future ep -->
