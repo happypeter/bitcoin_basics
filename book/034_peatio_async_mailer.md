@@ -3,10 +3,10 @@ layout: book
 title: 貔貅搭建：邮件发送机制
 ---
 
-好书接上文。前面基本跑起来了 peatio，但是这不表示每个功能都能用了。所有这次继续以让不能用的功能变得能用为主线，来以功能为单位继续演示搭建貔貅的过程。
+好书接上文。前面基本跑起来了 peatio，但是这不表示每个功能都能用了。这次继续以让不能用的功能变得能用为主线，以功能为单位继续演示搭建貔貅的过程。关注邮件发送。
 
 
-创建用户，`tail -f log/production.log` 报错
+来到页面，创建用户，`tail -f log/production.log` 报错
 
     E, [2014-10-23T04:36:09.680510 #11084] ERROR -- : Could not establish TCP connection to 127.0.0.1:5672:
     E, [2014-10-23T04:36:09.739548 #11084] ERROR -- : Unable to enqueue :mailer: Could not establish TCP connection to 127.0.0.1:5672: , fallback to synchronous mail delivery
@@ -23,7 +23,7 @@ title: 貔貅搭建：邮件发送机制
 
 ### 先来保证同步的可以发出去
 
-报错信息中可以看出是邮件的问题，所以先来配置文件。我这里选择的服务是 mailgun 的免费服务，当然 mailgun 对国内的 qq 邮箱支持不太好，所以可能你需要选择国内的某个邮件服务。
+报错信息中可以看出是邮件的问题，所以先来配置邮件服务。我这里选择的服务是 mailgun 的免费方案，当然 mailgun 对国内的 qq 邮箱支持不太好，所以可能你需要选择国内的某个邮件服务。
 
 <!--  开发模式下调试邮件有技巧
 
@@ -68,8 +68,6 @@ production.rb 中还用到了：
 
 这次收到邮件了。
 
-
-
 <!--
      alias cleandb="bundle exec rake db:reset db:migrate"
  -->
@@ -79,13 +77,13 @@ mailgun/peterandbillie.com
 SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 -->
 
-不过这样发送虽然成功了，用户体验不太好，用户到等待，而且在 log 中也可以看到
+不过这样发送虽然成功了，用户体验不太好，用户点击按钮之后需要等待一会儿。在 log 中也可以看到
 
     E, [2014-10-23T05:11:20.434603 #12150] ERROR -- : Could not establish TCP connection to 127.0.0.1:5672:
     E, [2014-10-23T05:11:20.568388 #12150] ERROR -- : Unable to enqueue :mailer: Could not establish TCP connection to 127.0.0.1:5672: , fallback to synchronous mail delivery
     I, [2014-10-23T05:11:20.611862 #12150]  INFO -- :   Rendered token_mailer/activation.text.erb (3.0ms)
 
-所以，世界本应是异步的，所以进入下一步。
+所以，世界本应是异步的，进入下一步。
 
 ### 再来实现后台异步发送邮件
 
@@ -104,8 +102,7 @@ SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 
 第二步，启动 daemons
 
-
-run:
+执行
 
     bundle exec rake daemons:start
 
