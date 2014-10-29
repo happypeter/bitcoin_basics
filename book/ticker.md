@@ -18,4 +18,4 @@ views/private/markets/show.html.slim: 中调用了一个 partial： _ticker.html
 
 - 到这里，就能很清楚的看出 ticker 的数据来源了
 
-
+- daemon 中也有 Pusher 相关内容
