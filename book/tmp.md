@@ -1,7 +1,7 @@
 
 http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 
-邱亮推荐录一个 onepassword 的视频，给 knewcoin 
+邱亮推荐录一个 onepassword 的视频，给 knewcoin
 
 
 * qq 邮箱，peatio 用不了，其他国内可以用
@@ -33,20 +33,6 @@ http://www.8btc.com/bitcoin-daily-bitcoin101-infographics
 1.5.8 记账权!
 1.5.9 钱包!
 1.5.10 数字签名!
-…可添加新名词!
-!
-2. ⽐特币挖掘!
-2.1 挖掘⽐特币流程!
-2.2 如何成为矿⼯!
-2.3 ⽐特币挖掘原理!
-2.4 什么是矿机!
-2.5 ⽐特币全球三⼤矿池介绍!
-!
-!
-8. ⽐特币专家说!
-8.1 李笑来专栏（周期性访谈）!
-8.2 ⽐特币⾏情分析（周期性⾛势解读）!
-8.3 ⽐特币时事播报（不定期相关事件播报、解读）
 ~~~
 
 - 交易所集中化之问题
