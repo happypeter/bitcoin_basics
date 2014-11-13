@@ -8,6 +8,8 @@ title: 貔貅搭建： 心跳数据显示
 ### 基本流程
 首先看一下 slide ，了解基本流程。
 
+![](http://media.happycasts.net/pic/peterpic/ticker_flow.png)
+
 有了新的交易之后，models/worker/market_ticker.rb 中的
 
     def update_ticker(trade)
@@ -19,13 +21,18 @@ title: 貔貅搭建： 心跳数据显示
 会把实时数据写入到 cache 中，现在我来手动写入 cache 数据，也就是在这一点之前发生的，如何创建的 trade，如何 update_ticker 被触发，这些事情这一集里先不关心。本视频只是来关注，实时数据写入 cache 之后，程序读取数据并及时推送到浏览器中显示的这个过程。
 
 ### 伪造 cache 数据来进行试验
-操作都是在 peterandbillie.com 服务器上进行的。现在我想使用 rails c 这个命令，但是系统报错，没有 rails 这个命令。
 
-解决方法：
+
+<!-- 操作都是在 peterandbillie.com 服务器上进行的。现在我想使用 rails c 这个命令，但是系统报错，没有 rails 这个命令。
+
+解决方法： gem install rails 最后能用了，但是感觉很不对劲，又把 activerecord 那些包又重装了一遍。
+
+肯定有更好的方法，不过暂时这个就不讲了
+-->
 
 启动  rails console 执行
 
-    Rails.cache.write('peatio:btccny:ticker',  {low: 100.2, high: 200.2, last: 1.2, volume: 333})
+    Rails.cache.write('peatio:btccny:ticker',  {low: 100.2, high: 200.2, last: 180.3, volume: 333})
 
 如果写入报错，那就来看一下 redis 是否在正常运行。
 
@@ -35,7 +42,7 @@ title: 貔貅搭建： 心跳数据显示
 
      config.cache_store = :redis_store, ENV['REDIS_URL'], { expires_in: 24.hours }
 
-收据写入 cache 之后，就看看读取的代码有没有在正确轮询了。
+ticker 数据写入 cache 之后，就看看读取的代码有没有在正确轮询了。
 
     ps aux|grep peatio
 
@@ -65,7 +72,7 @@ application.yml 的相应位置。然后要 `touch tmp/restart.txt` 重启服务
 这样到 pusher.com 的 debug console 我就可以看到每隔三秒收到了新的信息了。今天的最新的代码，数据格式是这样的：
 
     # channel: market-btccny-global
-    # event: update
+    # event: tickers
 
     {
       "btccny": {
