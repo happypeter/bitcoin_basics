@@ -36,34 +36,27 @@ title: 貔貅搭建： 心跳数据显示
 
     bundle exec rake daemons:start
 
-下一步，到 daemons/global_state.rb 中添加一条调试语句。
+下一步，到 global.rb#ticker 中添加一条调试语句。
+
+    Rails.logger.info ticker.inspect
+
+这样，需要重启 daemons 才能生效。这样到 tail -f log/production.log 中可以看到 `ticker` 中存放的内容，并且会
+看到每隔3秒会重新执行一次。这是因为 global.rb#ticker 是在 daemons/global_state.rb 中一直轮询执行的。
 
 
->目前可以确认 models/global.rb 中写入的 ticker 的原始数据，可以通过 pusher 通道，传递到前端显示。
+### pusher 相关
 
-现在动手中保障这一步，也就是保障 pusher 已经在正常工作了。
-- 我把 application.yml 中的 pusher 设置都 comment 了，但是 global.rb 中的默认值一样可以显示在页面上。
-- 填入 app key 之后，从 pusher.com 的 console 中填写数据，peatio.dev 的前端是有反应的。
+同时也会被每三秒执行一次的还有 global.rb#trigger 其中的关键语句是把心跳信息发送到 pusher.com
 
+    def trigger(event, data)
+      Pusher.trigger_async(channel, event, data)
+    end
 
-- 查看后台进程是否在正常的轮询
-  - rake daemon:start 之后，下面的操作每个两三秒就会有输出的
+所以现在来配置一下 pusher，到我自己的 Pusher 账号，新建一个应用叫 peterandbillie.com 拿到 app_id&key&secret 三项信息，填入
+application.yml 的相应位置。然后要 `touch tmp/restart.txt` 重启服务器。
 
-     vagrant@vagrant-ubuntu-trusty-64:~/peatio/log$ tail -f peatio:amqp:market_data.output
-    D, [2014-11-12T09:30:23.146402 #8490] DEBUG -- : SlaveBook (btccny) updated
-    D, [2014-11-12T09:30:28.149196 #8490] DEBUG -- : SlaveBook (btccny) updated
-    D, [2014-11-12T09:30:33.152712 #8490] DEBUG -- : SlaveBook (btccny) updated
-    D, [2014-11-12T09:30:38.155199 #8490] DEBUG -- : SlaveBook (btccny) updated
+这样到 pusher.com 的 debug console 我就可以看到每隔三秒收到了新的信息了。同时 <http://peterandbillie.com/markets/btccny> 也就是交易大厅页面也会看到信息更新了。
 
+再次到 rails console 中写入其他数据到 cache，可以看到页面上又了及时的变化。
 
-  - 上面的信息来自一个 worker, slave_book.rb
-
-        Rails.logger.debug "SlaveBook (#{market}) updated"
-
-    同样的语句，我可以加到 market_ticker 这个 worker 里面试试
-
-
-
-- rails c 中执行这样的语句就可以创建 trade 了
-  t = Trade.create(price: 22.2, volume: 22.3, funds: 2222)
 
