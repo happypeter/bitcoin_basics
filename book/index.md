@@ -5,7 +5,7 @@ title: 快乐新知比特币
 
 <ul class="listing">
   <li>
-    <a href="036_peatio_ticker.html">035 貔貅搭建：心跳数据</a><span> November 14, 2014</span>
+    <a href="036_peatio_ticker.html">036 貔貅搭建：心跳数据</a><span> November 14, 2014</span>
   </li>
   <li>
     <a href="035_peatio_pusher.html">035 貔貅搭建：pusher</a><span> November 4, 2014</span>

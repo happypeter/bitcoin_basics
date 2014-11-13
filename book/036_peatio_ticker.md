@@ -5,6 +5,7 @@ title: 貔貅搭建： 心跳数据显示
 
 本期介绍交易大厅中的数据心跳（ ticker ）的原理。从后到前走出一条线来，因为创建 trade 需要比较多的准备工作。所以这条线的最后端就从有程序写了 cache 来开始走起。今天的讨论基于 2014年11月13日的代码，后面随着 peatio 的开发，一些 json 接口的数据格式可能会稍作调整。
 
+### 基本流程
 首先看一下 slide ，了解基本流程。
 
 有了新的交易之后，models/worker/market_ticker.rb 中的
@@ -17,6 +18,11 @@ title: 貔貅搭建： 心跳数据显示
 
 会把实时数据写入到 cache 中，现在我来手动写入 cache 数据，也就是在这一点之前发生的，如何创建的 trade，如何 update_ticker 被触发，这些事情这一集里先不关心。本视频只是来关注，实时数据写入 cache 之后，程序读取数据并及时推送到浏览器中显示的这个过程。
 
+### 伪造 cache 数据来进行试验
+操作都是在 peterandbillie.com 服务器上进行的。现在我想使用 rails c 这个命令，但是系统报错，没有 rails 这个命令。
+
+解决方法：
+
 启动  rails console 执行
 
     Rails.cache.write('peatio:btccny:ticker',  {low: 100.2, high: 200.2, last: 1.2, volume: 333})
@@ -25,8 +31,9 @@ title: 貔貅搭建： 心跳数据显示
 
     ps aux|grep redis
 
-否则，参考 peatio 官方文档对 redis 进行安装和启动。
+否则，参考 peatio 官方文档对 redis 进行安装和启动。设置在 production.rb
 
+     config.cache_store = :redis_store, ENV['REDIS_URL'], { expires_in: 24.hours }
 
 收据写入 cache 之后，就看看读取的代码有没有在正确轮询了。
 
@@ -55,7 +62,28 @@ title: 貔貅搭建： 心跳数据显示
 所以现在来配置一下 pusher，到我自己的 Pusher 账号，新建一个应用叫 peterandbillie.com 拿到 app_id&key&secret 三项信息，填入
 application.yml 的相应位置。然后要 `touch tmp/restart.txt` 重启服务器。
 
-这样到 pusher.com 的 debug console 我就可以看到每隔三秒收到了新的信息了。同时 <http://peterandbillie.com/markets/btccny> 也就是交易大厅页面也会看到信息更新了。
+这样到 pusher.com 的 debug console 我就可以看到每隔三秒收到了新的信息了。今天的最新的代码，数据格式是这样的：
+
+    # channel: market-btccny-global
+    # event: update
+
+    {
+      "btccny": {
+        "base_unit": "btc",
+        "quote_unit": "cny",
+        "low": "0.0",
+        "high": "0.0",
+        "last": "0.0",
+        "volume": "0.0",
+        "sell": "0.0",
+        "buy": "0.0",
+        "at": 1415843253
+      }
+    }
+
+
+
+同时 <http://peterandbillie.com/markets/btccny> 也就是交易大厅页面也会看到信息更新了。本地机器上面，连接 pusher 很多时候会失败的。服务器上是 100% 没问题的。
 
 再次到 rails console 中写入其他数据到 cache，可以看到页面上又了及时的变化。
 
