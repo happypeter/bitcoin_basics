@@ -8,7 +8,7 @@ title: 名人眼中的比特币
 
 ### Paul Gramham
 
-![](http://media.happycasts.net/pic/peterpic/pg.jpg)
+![](http://media.haoduoshipin.com/pic/peterpic/pg.jpg)
 
 第一个要说的是我最崇拜的 pg，硅谷最成功（我觉得没有之一）的创业孵化器 YC 的创始人，
 成功孵化了像 reddit，airbnb，dropbox，heroku 这些公司，他的个人网站 <http://www.paulgraham.com/>上面有很多文章是创业者必读的，这些内容也被编成一本书叫做《黑客与画家》，北京这边的书店我以前看到都有卖的。
@@ -28,7 +28,7 @@ Jack 是 Twitter 的创始人，目前他工作在另外一家他创立的公司
 
 2011 年的时候他有一个介绍 Square 的 idea 的由来的视频 <http://startups.co.uk/jack-dorsey-on-payment-as-a-form-of-communication-video/> 。 其中提到一句话，我觉得特别有启发，他说：“Payment is anothor form of communication"，支付是人们交流沟通的另外一种形式。后来在一次访谈中他发表了他对比特币的看法，视频链接 <https://www.youtube.com/watch?v=0zJe4PUVx3c>
 
-![](http://media.happycasts.net/pic/peterpic/jd_youtube.png)
+![](http://media.haoduoshipin.com/pic/peterpic/jd_youtube.png)
 
 >Bitcoin is a dream for a lot of mathematician，because it represents a fully anonymous currency that can not be trace. I think it does need to be a digital equivalence to cash. Anonymity is really important to our democracy，we value anonymous communication. Currency is another form of a vote. We need to be able to replicate paper-backed currency，bitcoin is a potential answer，it may not be the one, but it will be one.
 
@@ -39,7 +39,7 @@ Jack 是 Twitter 的创始人，目前他工作在另外一家他创立的公司
 
 ### 马克安德森 vs 巴菲特
 
-![](http://media.happycasts.net/pic/peterpic/mark_warren.png)
+![](http://media.haoduoshipin.com/pic/peterpic/mark_warren.png)
 
 Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第一个真正被广泛应用的浏览器 Mosiac，之后创立了网景公司。他的总体观点是比特币是像互联网一样会引发一场伟大的变革的，在 <http://knewcoin.com/episodes/38> 中，我曾经翻译过一个他的演讲，里面有比较详细的他的各个论点。
 
@@ -58,7 +58,7 @@ Mark 是互联网民用化道路上举足轻重的人物，创作了世界上第
 
 ### Bill Gates
 
-![](http://media.happycasts.net/pic/peterpic/billgates.png)
+![](http://media.haoduoshipin.com/pic/peterpic/billgates.png)
 
 比尔盖茨的观点：
 

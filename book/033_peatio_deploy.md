@@ -28,7 +28,7 @@ title: 貔貅搭建：基本部署过程
 
 ### 安装 ruby 语言和数据库
 
-![](http://media.happycasts.net/pic/peterpic/ruby-lang.png)
+![](http://media.haoduoshipin.com/pic/peterpic/ruby-lang.png)
 
 首先执行 `1. Setup deploy user` 中的内容
 
@@ -194,7 +194,7 @@ title: 貔貅搭建：基本部署过程
 
 这样打来浏览器访问 peterandbillie.com 可以看到，我自己的这个交易所已经开始运行啦。huhaha...
 
-![](http://media.happycasts.net/pic/peterpic/peatio_shot.png)
+![](http://media.haoduoshipin.com/pic/peterpic/peatio_shot.png)
 
 ### 结语
 
