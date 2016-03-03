@@ -8,7 +8,7 @@ title: 貔貅搭建： 心跳数据显示
 ### 基本流程
 首先看一下 slide ，了解基本流程。
 
-![](http://media.haoduoshipin.com/pic/peterpic/ticker_flow.png)
+![](http://media.haoduoshipin.com/pic/bitcoin_basics/ticker_flow.png)
 
 有了新的交易之后，models/worker/market_ticker.rb 中的
 

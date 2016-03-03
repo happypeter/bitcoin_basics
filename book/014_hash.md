@@ -5,7 +5,7 @@ title: 哈希
 
 我们作为非计算机专业的人去看一些技术资料的时候，经常会被一些讨厌的术语弄得很头疼。今天要聊的这个词叫”哈希“，理解什么是哈希是理解数据校验和加密技术的基础，所以这个概念是非常重要的，同时这个概念其实本身是很简单的。哈希（ hash ） 这个词的英文本意是“切碎并搅拌”的意思，有一种菜就叫”Hash“ ，就是把很多食材切碎并搅拌在一起做成的，如下图：
 
-![](http://media.haoduoshipin.com/pic/peterpic/hash_dish.jpg)
+![](http://media.haoduoshipin.com/pic/bitcoin_basics/hash_dish.jpg)
 
 
 实际中使用的一些哈希算法很多就跟这个做菜的过程类似，把给定的数据文件切成一块一块的，然后适当的排列出我们最终要得到的哈希值。当然本文中我们不去讨论这些具体的算法实现，只是来了解一下哈希运算的基本特征。
@@ -38,4 +38,4 @@ d7f2b08853cc9d9c7664e4a421378c24
 
 总之，比较简短高效的哈希算法可以用来做完整性校验（integrity verification)，这样的哈希值也可以叫做”校验值“（checksum), 也可以用来做原始数据的代表，这时哈希值也可以叫做”指纹“（fingerprint)。比较长的哈希算法（例如 sha256)适合用在加密领域。
 
-![](http://media.haoduoshipin.com/pic/peterpic/fingerprint.jpeg)
+![](http://media.haoduoshipin.com/pic/bitcoin_basics/fingerprint.jpeg)

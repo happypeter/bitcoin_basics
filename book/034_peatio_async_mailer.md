@@ -89,7 +89,7 @@ SMTP_PASSWORD: e748325e8020e3f87b7a6d79b8f1cfbc
 
 异步操作是这样一个流程：<!-- https://github.com/happypeter/bitcoin_basics/issues/41 -->
 
-![](http://media.haoduoshipin.com/pic/peterpic/async_mail.png)
+![](http://media.haoduoshipin.com/pic/bitcoin_basics/async_mail.png)
 
 主要需要两个操作：
 
