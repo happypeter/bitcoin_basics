@@ -6,7 +6,7 @@ title: 快乐新知比特币
 <a href="./book">快乐新知比特币教程</a>，由 Peter（ <http://haoduoshipin.com> ) 为您奉献。内容产生于 2014 年前两个季度，李笑来先生对我付出的劳动进行了全额资助。
 
 
-<p><br /><b>欢迎大家加我微信，不过目前我已经不从事比特币了:</b></p>
+<p><br /><b>欢迎大家加我微信，不过目前我已经不从事比特币研究了:</b></p>
 
 <blockquote>
 <p>
@@ -24,6 +24,3 @@ Andreessen</a>:
 >in the world and everybody expected to adapt to without having it get
 >translated from weird and scary to like ok you can wrap your head as normal
 >people around this...
-
-
-
