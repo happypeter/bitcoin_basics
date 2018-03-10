@@ -8,13 +8,13 @@ title: 高效比特币人的七个习惯
 ，今天的内容来自它上面的一期：<http://letstalkbitcoin.com/blog/post/mmm-s02e05>
 。我翻译的内容从音频的第2分钟到第12分钟。好，这个节目推荐给大家，下面是翻译正文。
 
-![](http://media.haoduoshipin.com/pic/bitcoin_basics/talkbitcoin.png)
+![](http://happypeter.github.io/bitcoin_basics/img/talkbitcoin.png)
 
 25年前，Stephen R. Covey
 写了一本书，把最近两百年来成功的智慧总结成了7个习惯。这本书后来在全球畅销，买了
 2500 万本。书名叫做《高效人士的七个习惯 - 自我提升课程》
 
-![](http://media.haoduoshipin.com/pic/bitcoin_basics/7habits.jpg)
+![](http://happypeter.github.io/bitcoin_basics/img/7habits.jpg)
 今天我们要说的却是：高效比特币人的七个习惯。
 
 ### 什么是比特币人?
@@ -58,7 +58,7 @@ title: 高效比特币人的七个习惯
 
 其实事情永远都是这样，你可以给一匹马送上清泉，但是他喝不喝你可做不了主。说实话，有些人永远都不会对比特币感兴趣的，人家可能期待一种稳定，而对咱们所吹嘘的所谓自由这样的东西不是特别感冒。保证匿名权和隐私权有那么重要吗？不过，我们也应该庆幸，总会有一些人其实是一直在寻找自由的，只是他们不知道如何才能做到。比特币其实就是一个强化个人自由的工具，所以如果你把比特币介绍给这些人，很可能他们会眼前一亮。
 
-![](http://media.haoduoshipin.com/pic/bitcoin_basics/liberty.jpeg)
+![](http://happypeter.github.io/bitcoin_basics/img/liberty.jpeg)
 
 ### 第六个习惯，有效的团队合作
 
@@ -73,7 +73,7 @@ title: 高效比特币人的七个习惯
 
 总之，学会了这七种习惯，成了高效的比特币人，倒未必能让你变富有，但是你可以帮助他人找到自由。
 
-![](http://media.haoduoshipin.com/pic/bitcoin_basics/holdit.png)
+![](http://happypeter.github.io/bitcoin_basics/img/holdit.png)
 
 ---
 
