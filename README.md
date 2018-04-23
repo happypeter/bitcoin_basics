@@ -1,6 +1,6 @@
 ### 课程视频
 
-<http://knewcoin.com/episodes>
+https://haoqicat.com/bitcoin
 
 
 
