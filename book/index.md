@@ -74,5 +74,7 @@ title: 快乐新知比特币
   <li>
     <a href="014_hash.html">014 哈希</a> <span>May 6, 2014</span>
   </li>
+  <li>
+    <a href="https://www.8btc.com/video/list?cat_id=593">更早</a> <span>March, 2014</span>
+  </li>
 </ul>
-
