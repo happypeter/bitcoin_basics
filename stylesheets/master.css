@@ -1,12 +1,12 @@
 /* common.css */
 body {
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #dda;
   color: #222;
 }
 
 a {
-  color: #307EA9;
+  color: #307ea9;
   text-decoration: none;
 }
 
@@ -15,23 +15,22 @@ ul {
   padding: 0;
 }
 
-
 pre {
   background: #f8f8f8;
-  border: 1px solid #E7E5DC;
+  border: 1px solid #e7e5dc;
   border-width: 1px 0 4px 6px;
   padding: 1em;
   overflow: auto;
   color: black;
   line-height: 120%;
-  font-family: "Consolas","Courier New",Courier,mono;
+  font-family: 'Consolas', 'Courier New', Courier, mono;
   font-size: 12px;
   letter-spacing: 0;
 }
 
 code {
   background: #f8f8f8;
-  border: 1px solid #E7E5DC;
+  border: 1px solid #e7e5dc;
   padding: 0.2em;
 }
 
@@ -39,7 +38,6 @@ pre code {
   border: none;
   padding: 0;
 }
-
 
 /* sections/book.css */
 
@@ -65,7 +63,6 @@ div.slide {
 .ss-guide .ss-part-desc {
   padding-top: 5px;
 }
-
 
 /* layout.css */
 #wrapper {
@@ -133,7 +130,6 @@ div.slide {
   font-weight: normal;
 }
 
-
 .content {
   padding: 2em;
 }
@@ -144,7 +140,8 @@ div.slide {
   font-size: 1.5em;
 }
 
-.content p, .content ul {
+.content p,
+.content ul {
   line-height: 1.75;
   color: #595959;
   // steal this from logdown
@@ -161,21 +158,16 @@ div.slide {
 
 #footer {
   margin-bottom: 2em;
-  color: #3E423A;
+  color: #3e423a;
   font-size: 0.9em;
   padding: 0.5em;
   text-align: center;
 }
 
 #footer a {
-  color: #3E423A;
+  color: #3e423a;
   font-weight: normal;
 }
-
-
-
-
-
 
 /* Below all copied stuff, probably not in use*/
 
@@ -207,17 +199,23 @@ div.slide {
   vertical-align: top;
 }
 
-.float-left { float: left; }
-.float-right { float: right; }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
 
-a img { border: 0; }
+a img {
+  border: 0;
+}
 
-ul#toc  {
+ul#toc {
   list-style: none;
   margin: 0;
 }
 
-ul#toc ul  {
+ul#toc ul {
   list-style: none;
 }
 
@@ -226,9 +224,9 @@ ul#toc a {
 }
 
 .book-ad a {
-    color: #262;
-    font-size: 1.5em;
-    text-decoration: none;
+  color: #262;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 #buy-book-toc {
@@ -242,7 +240,7 @@ ul#toc a {
   padding: 10px;
 }
 #follow img {
-  float:left;
+  float: left;
   border: 0;
 }
 
@@ -250,7 +248,13 @@ table#threetrees {
   width: 100%;
   border: 3px solid #014d65;
   padding: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#CEEAF9));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fff),
+    to(#ceeaf9)
+  );
 }
 
 table#threetrees th.title {
@@ -277,7 +281,6 @@ h3.subtitle small {
   font-size: 0.7em;
   padding-left: 10px;
 }
-
 
 .moreinfo {
   float: right;
@@ -314,39 +317,39 @@ h3.subtitle small {
 }
 
 .commands-index ul {
-    list-style-type: none;
-    padding-left: 20px;
+  list-style-type: none;
+  padding-left: 20px;
 }
 
 .commands-index ul li {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 .commands-index ul li strong {
-    display: inline-block;
-    padding-left: 5px;
-    vertical-align: top;
-    width: 130px;
-    transition: all .2s;
-    -moz-transition: all .2s;
-    -webkit-transition: all .2s;
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: top;
+  width: 130px;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 
 .commands-index ul li:hover strong {
-    background:#DDA;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+  background: #dda;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .commands-index ul li small {
-    display: inline-block;
-    width: 560px;
+  display: inline-block;
+  width: 560px;
 }
 
 .commands-index ul li small .pagelink {
-    display: inline-block;
-    width: 50px;
+  display: inline-block;
+  width: 50px;
 }
 
 /* sections/book-index.css*/
@@ -370,4 +373,3 @@ h3.subtitle small {
   font-size: 12px;
   color: #999;
 }
-
