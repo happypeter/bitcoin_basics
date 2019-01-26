@@ -1,6 +1,5 @@
 ---
-layout: book
-title: bitcoin.pdf
+layout: paper
 ---
 
 比特币：一个点对点的电子货币系统
