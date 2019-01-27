@@ -35,9 +35,14 @@ layout: paper
 
 ## 4. 工作量证明
 
-xxx
+我们真正需要的是一个类似 Adam Back 的哈希现金的工作量证明系统，而不是报纸或者论坛，来达成点对点的分布式时间戳服务器。工作量证明涉及到去找一个值，当对这个值进行类似 SHA-256 这样的哈希运算的时候，得到的哈希值满足以特定数量的零打头。随着零的数量的增加，找到这个值所需要的工作量会呈指数增长，但是要验证这个值是合格的只需要一次哈希运算即可。
+
+我们给区块数据添加一个随机数，每次运算区块的哈希的时候都把它加一，这样经过不断尝试就能找到一个合格的随机数的值，保证区块哈希以所需位数的零打头，这就是我们需要为时间戳服务器构建的工作量证明机制了。当我们花费了 CPU 算力去让区块满足了工作量证明机制的要求，那么这个区块就很难被改动了，因为改动区块必须要重新运算获得合格的随机数。随着新区块不断的添加的这个区块的后面，形成一条链，那么修改区块的工作量中还会包含重新制作之后的所有区块。
 
 ![](https://img.haoqicat.com/2019012503.jpg)
+
+The proof-of-work also solves the problem of determining representation in majority decision making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the work of the honest nodes. We will show later that the probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added.
+
 
 ## 5. 网络
 
