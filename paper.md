@@ -41,8 +41,9 @@ layout: paper
 
 ![](https://img.haoqicat.com/2019012503.jpg)
 
-The proof-of-work also solves the problem of determining representation in majority decision making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the work of the honest nodes. We will show later that the probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added.
+工作量证明机制同时解决了如何在投票的时候计票的问题。如果用一个 IP 地址代表一票，那么就很容易捣鬼，因为有人可以很轻易的获得很多 IP 。而工作量证明机制的思路是一个 CPU 一票。这样最长的那条链就可以代表多数票，因为它是用最多的算力生成出来的。如果诚实的节点控制了大多数的 CPU 算力，那么诚实的链就会比任何竞争链都要延长的更快。要想修改一个过去的区块，攻击者需要完成这个以及后面所有区块的工作量证明过程所需的工作量，然后赶上并超过所有诚实节点的工作量。稍后我们会展示，运算速度比较慢的攻击者追上所有诚实节点的概率会随着后续区块的增多而呈指数减小。
 
+因为硬件速度和节点数量的变化，工作量证明的难度是会不断调整的。调整通过不断改变每小时平均能够生成的区块数来实现。如果生成的太快，那么难度就会增加。
 
 ## 5. 网络
 
