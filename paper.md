@@ -103,11 +103,36 @@ layout: paper
 
 ## 11. 计算
 
-We consider the scenario of an attacker trying to generate an alternate chain faster than the honest chain. Even if this is accomplished, it does not throw the system open to arbitrary changes, such as creating value out of thin air or taking money that never belonged to the attacker. Nodes are not going to accept an invalid transaction as payment, and honest nodes will never accept a block containing them. An attacker can only try to change one of his own transactions to take back money he recently spent.
+我们来思考一下攻击者试图去生成另一条链，并让他的链的延长速度快于诚实链的情况。即使做到了，那这种情况也不意味着攻击者可以对系统做任意的修改，例如凭空给生成新币，或者把从来不属于自己的钱转给自己。节点不会接受无效的交易来进行支付，诚实的节点也绝不会接受包含无效交易的区块。攻击者唯一能做的就是通过修改自己的交易来把最近花掉的钱弄回来。
 
-The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker's chain being extended by one block, reducing the gap by -1.
+
+诚实链和攻击链的竞赛可以用二项式随机漫步来描述。成功事件是诚实链延长了一个区块，让自己的优势加1，失败事件是攻击者的链延长了一个区块，把差距减1。
+
 
 The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows8:
+
+![](https://img.haoqicat.com/2019012801.jpg)
+
+Given our assumption that , the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
+
+
+We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.
+
+
+The receiver generates a new key pair and gives the public key to the sender shortly before signing. This prevents the sender from preparing a chain of blocks ahead of time by working on it continuously until he is lucky enough to get far enough ahead, then executing the transaction at that moment. Once the transaction is sent, the dishonest sender starts working in secret on a parallel chain containing an alternate version of his transaction.
+
+
+The recipient waits until the transaction has been added to a block and blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:
+
+![](https://img.haoqicat.com/2019012802.jpg)
+
+To get the probability the attacker could still catch up now, we multiply the Poisson density for each amount of progress he could have made by the probability he could catch up from that point:
+
+![](https://img.haoqicat.com/2019012803.jpg)
+
+Rearranging to avoid summing the infinite tail of the distribution...
+
+![](https://img.haoqicat.com/2019012804.jpg)
 
 
 转换为 C 语言程序...
