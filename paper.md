@@ -94,13 +94,20 @@ layout: paper
 需要指出的是，这种扇形展开的形式，也就是一个交易会依赖多个交易同时那些交易又依赖更多的交易，并不会造成问题，因为永远没有必要去抽出一个交易的完整且独立的历史。
 
 ## 10. 隐私
-xxx
+
+传统的银行模式达成隐私的方式是限制公众访问交易双方以及可信第三方的信息。因为需要对公众宣布所有的交易，那这种方法就不可行了。但是通过保证公钥持有者匿名，依然可以切断信息流从而获得隐私。公众可以看到某人转了多大的数额给另外一个，但是不能确认这些人的身份。这跟股票交易所发布信息的隐私水平类似，可以让公众知道每个交易的时间和金额，但是不说出是谁在交易。
 
 ![](https://img.haoqicat.com/2019012507.jpg)
 
+为了再增加一层安全，每次交易的时候都应该更换密钥对，这样就可以避免所有的信息都指向同一个人。对于有多个输入的交易，有些指向还是避免不了的，这样就必然会被识别出这些交易的输入都是属于同一个人的。这里的最大的危险是，如果一旦密钥的拥有者被曝光了，这种指向性会暴露这个人的其他密钥对应的交易。
+
 ## 11. 计算
 
-xxx
+We consider the scenario of an attacker trying to generate an alternate chain faster than the honest chain. Even if this is accomplished, it does not throw the system open to arbitrary changes, such as creating value out of thin air or taking money that never belonged to the attacker. Nodes are not going to accept an invalid transaction as payment, and honest nodes will never accept a block containing them. An attacker can only try to change one of his own transactions to take back money he recently spent.
+
+The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker's chain being extended by one block, reducing the gap by -1.
+
+The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows8:
 
 ## 12. 总结
 
