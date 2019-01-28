@@ -85,7 +85,10 @@ layout: paper
 这样，只要诚实的节点控制网络，那么验证就是可信的，但是在攻击者掌握较多算力的情况下，这种验证方式是比较脆弱的。全节点可以自己验证交易，而使用简化验证这种方法的用户就很可能被掌握更多算力的攻击者伪造的交易所迷惑。防范这个问题的策略是去接收节点发过来的警告。当节点发现无效区块的时候，它会提醒用户的软件去下载完整的区块和被警告的交易，然后自己确认一下问题是否真的存在。需要频繁交易的业务场景还是最好运行自己的节点，这样可以保证更独立的安全性和更快的验证速度。
 
 ## 9. 价值的组合与分割
-xxx
+
+Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender.
+
+
 
 ![](https://img.haoqicat.com/2019012506.jpg)
 
