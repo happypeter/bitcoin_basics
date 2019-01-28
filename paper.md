@@ -77,7 +77,12 @@ layout: paper
 一个不带交易的区块头大概是80字节。假定每十分钟生成一个区块，每年生成的数据总量就是：80字节 * 6 * 24 * 365 = 4.2M 。就2008年来看，计算机系统一般都是 2G 的内存。根据摩尔定律，每年会增加 1.2G ，这样算的话，即使把所有的区块头都保存到内存里也不成问题。
 
 ## 8. 简化的支付验证
-xxx
+It is possible to verify payments without running a full network node.
+
+A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. 
+
+
+He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.
 
 ![](https://img.haoqicat.com/2019012505.jpg)
 
