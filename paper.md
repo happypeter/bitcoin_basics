@@ -108,29 +108,25 @@ layout: paper
 
 诚实链和攻击链的竞赛可以用二项式随机漫步来描述。成功事件是诚实链延长了一个区块，让自己的优势加1，失败事件是攻击者的链延长了一个区块，把差距减1。
 
-
-The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows8:
+落后特定距离的攻击者追上来的概率很类似赌徒破产问题。假定赌徒已经欠下了一些钱，但是拥有无限的透支信用，可以无限次的去赌，以便把钱还上。我们可以来计算赌徒能还上钱的概率，或者是攻击者可以追上诚实链的概率，如下
 
 ![](https://img.haoqicat.com/2019012801.jpg)
 
-Given our assumption that , the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
+假定 p>q ，概率会随着需要追的区块数量的增加而呈指数减小。由于他每次赢的机会都是偏小的，如果开始的时候它没能翻身，后面随着他落的更远，能够追上的机会就几乎不存在了。
 
+现在我们来思考交易接收方需要等多久才能足够确信发送方不能更改交易了。我们假定发送方是一个攻击者，他想要让接收方相信他已经支付，然后等了一会儿却又会把钱转给自己。收款人早晚会知道自己上当了，不过发送人希望那时已经太晚了。
 
-We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.
+接收方生成一对新的秘钥对，保证在发送方即将签署交易的时候再把公钥给它。否则就可能形成这样的情况：发送方通过不断的运算，让手里的链达成一定的领先优势，但是不广播这条链。接下来他广播了一个交易给全网，其中把钱转给了接收方。但是当交易发出后，发送方开始继续在自己私藏的那条链上运算，而这条链上的包含的交易内容可是不包含给接收者的那次转账的。
 
-
-The receiver generates a new key pair and gives the public key to the sender shortly before signing. This prevents the sender from preparing a chain of blocks ahead of time by working on it continuously until he is lucky enough to get far enough ahead, then executing the transaction at that moment. Once the transaction is sent, the dishonest sender starts working in secret on a parallel chain containing an alternate version of his transaction.
-
-
-The recipient waits until the transaction has been added to a block and blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:
+接收者会等待交易被区块收录，而且后续已经有 z 个区块产生了。他不知道攻击者的那条链上已经延长了几个区块了，但是假定生成每个诚实的区块需要一个平均的期待时间。攻击者的进展就是一个泊松分布，期望值是：
 
 ![](https://img.haoqicat.com/2019012802.jpg)
 
-To get the probability the attacker could still catch up now, we multiply the Poisson density for each amount of progress he could have made by the probability he could catch up from that point:
+为了得到攻击者仍然能够追上的概率，我们将攻击者取得进展区块数量的泊松分布的概率密度，乘以在该数量下攻击者依然能够追赶上的概率：
 
 ![](https://img.haoqicat.com/2019012803.jpg)
 
-Rearranging to avoid summing the infinite tail of the distribution...
+重新整理，避免对分布的无限的尾部求和...
 
 ![](https://img.haoqicat.com/2019012804.jpg)
 
@@ -156,7 +152,7 @@ double AttackerSuccessProbability(double q, int z)
 }
 ```
 
-可以看到概率随着 z 的增加指数级下降：
+运行部分结果，可以看到概率随着 z 的增加指数级下降：
 
 ```
    q=0.1
@@ -202,4 +198,4 @@ double AttackerSuccessProbability(double q, int z)
 
 ## 12. 总结
 
-xxx
+We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to record a public history of transactions that quickly becomes computationally impractical for an attacker to change if honest nodes control a majority of CPU power. The network is robust in its unstructured simplicity. Nodes work all at once with little coordination. They do not need to be identified, since messages are not routed to any particular place and only need to be delivered on a best effort basis. Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone. They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them. Any needed rules and incentives can be enforced with this consensus mechanism.
