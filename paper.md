@@ -77,14 +77,12 @@ layout: paper
 一个不带交易的区块头大概是80字节。假定每十分钟生成一个区块，每年生成的数据总量就是：80字节 * 6 * 24 * 365 = 4.2M 。就2008年来看，计算机系统一般都是 2G 的内存。根据摩尔定律，每年会增加 1.2G ，这样算的话，即使把所有的区块头都保存到内存里也不成问题。
 
 ## 8. 简化的支付验证
-It is possible to verify payments without running a full network node.
 
-A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. 
-
-
-He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.
+不运行全节点也可以去验证支付。通过请求网络上的各个节点，用户可以获取到他认为最长的那条工作量证明链。用户只需要去保存最长链的区块头，并且拿到连接交易和给它加上时间戳的区块的默克尔分支。用户自己并不能去检查交易，但是通过把交易连接到链上的一个特定位置，他可以看到的确有节点接受了这个交易，而之后的区块则可以证明这个交易是被全网接受的。
 
 ![](https://img.haoqicat.com/2019012505.jpg)
+
+这样，只要诚实的节点控制网络，那么验证就是可信的，但是在攻击者掌握较多算力的情况下，这种验证方式是比较脆弱的。全节点可以自己验证交易，而使用简化验证这种方法的用户就很可能被掌握更多算力的攻击者伪造的交易所迷惑。防范这个问题的策略是去接收节点发过来的警告。当节点发现无效区块的时候，它会提醒用户的软件去下载完整的区块和被警告的交易，然后自己确认一下问题是否真的存在。需要频繁交易的业务场景还是最好运行自己的节点，这样可以保证更独立的安全性和更快的验证速度。
 
 ## 9. 价值的组合与分割
 xxx
