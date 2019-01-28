@@ -86,11 +86,12 @@ layout: paper
 
 ## 9. 价值的组合与分割
 
-Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender.
-
+尽管可以对币作单个的处理，但是如果转账的时候把每一分钱都单独做个交易，就显得太傻了。为了实现价值的合并和分割，交易中可以有多个输入和输出。一般来讲，输入可能是一个，如果之前的有一个交易数额够用的话，否则就会有几个输入，以便凑够数额。输出最多就是两个：一个用来支付，如果需要找零，才会另外有一个输出指向发出方。
 
 
 ![](https://img.haoqicat.com/2019012506.jpg)
+
+需要指出的是，这种扇形展开的形式，也就是一个交易会依赖多个交易同时那些交易又依赖更多的交易，并不会造成问题，因为永远没有必要去抽出一个交易的完整且独立的历史。
 
 ## 10. 隐私
 xxx
