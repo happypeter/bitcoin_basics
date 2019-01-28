@@ -1,11 +1,11 @@
 img {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
   display: block;
   width: 100%;
 }
 
 .content {
-  max-width: 960px;
+  max-width: 700px;
   margin: 20px auto;
 }
