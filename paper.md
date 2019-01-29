@@ -197,4 +197,16 @@ q=0.45   z=340
 
 ## 12. 总结
 
-We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to record a public history of transactions that quickly becomes computationally impractical for an attacker to change if honest nodes control a majority of CPU power. The network is robust in its unstructured simplicity. Nodes work all at once with little coordination. They do not need to be identified, since messages are not routed to any particular place and only need to be delivered on a best effort basis. Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone. They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them. Any needed rules and incentives can be enforced with this consensus mechanism.
+我们提出了一个不依赖于信任的电子交易系统。首先引入了通过数字签名实现的常见加密货币框架，这个框架可以保证明确的所有权，但是不能防止双花。为此，我们提出了一个通过工作量证明来记录交易历史的一个点对点网络，只要大部分的 CPU 算力被诚实节点掌握，就能使得攻击者实际中难以改变交易记录。网络自身没有任何结构限制，这种简约保证了它的容错能力。各个节点同时工作但是不需要进行任何的协调。节点也不需要标明身份，因为信息发送没有明确的目的地，只需要尽可能广泛的传播即可。节点可以随意的进出网络，当重新加入网络后，只要接受工作量证明链作为离开的这段时间内所发生的事情即可。节点通过 CPU 算力来投票，如果表示接受一些有效区块，就会继续延长它们，反之如果拒绝延长，就表示认为这些区块是无效的。任何必要的规则和激励都可以通过这种共识机制来推行。
+
+## 参考文献
+
+- [1] 戴伟，b-money ， http://www.weidai.com/bmoney.txt ，1998年。
+- [2] H. Massias ， X.S. Avila ， and J.-J. Quisquater ，《基于最小化信任的安全时间戳服务的设计》， 1999年五月，Benelux 第二十届信息理论座谈会。
+- [3] S. Haber, W.S. Stornetta, 《如何给数字文件加时间戳》，《密码学期刊》第3卷2号， 99-111页， 1991年。
+- [4] D. Bayer, S. Haber, W.S. Stornetta, 《提升数字时间戳的效率和可信度》，《计算机和通信安全》第二章，329-334页，1993年。
+- [5] S. Haber ， W.S. Stornetta ，《数位字符串的安全命名》，《第四届 ACM 计算机和通信安全大会论文集》28-35页，1997年四月。
+- [6] A. Back, 《Hashcash - 一种 DOS 防范措施》
+http://www.hashcash.org/papers/hashcash.pdf ，2002年。
+- [7] R.C. Merkle, 《公钥加密系统协议》， Proc ，1980 安全和隐私座谈会， IEEE 计算机学会，122-133页，1980年四月。
+- [8] W. Feller, "概率理论及其应用简介" 1957年。
