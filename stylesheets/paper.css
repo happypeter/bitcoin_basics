@@ -7,5 +7,6 @@ img {
 
 .content {
   max-width: 700px;
+  padding: 20px;
   margin: 20px auto;
 }
