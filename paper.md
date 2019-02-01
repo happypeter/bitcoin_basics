@@ -209,4 +209,4 @@ q=0.45   z=340
 - [6] A. Back, 《哈希现金 -- 一种 DOS 防范措施》
 http://www.hashcash.org/papers/hashcash.pdf ，2002年。
 - [7] R.C. Merkle, 《公钥加密系统协议》， Proc ，1980 安全和隐私座谈会， IEEE 计算机学会，122-133页，1980年四月。
-- [8] W. Feller, "概率理论及其应用简介" 1957年。
+- [8] W. Feller, 《概率理论及其应用简介》 1957年。
