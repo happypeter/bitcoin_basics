@@ -4,7 +4,7 @@ layout: paper
 
 # 比特币：一个点对点的电子现金系统
 
-作者：中本聪，<https://bitcoin.org/bitcoin.pdf> 翻译：[happypeter](https://github.com/happypeter/bitcoin_basics) 。
+作者：中本聪，<https://bitcoin.org/bitcoin.pdf> 翻译：[happypeter](https://github.com/happypeter/bitcoin_basics) ，English Version: [html](paper-en)。 
 
 ## 摘要
 
