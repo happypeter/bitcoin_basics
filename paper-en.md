@@ -110,7 +110,7 @@ The race between the honest chain and an attacker chain can be characterized as 
 
 The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [8]:
 
-![](https://img.haoqicat.com/2019012801.jpg)
+![](https://img.haoqicat.com/2019020108.jpg)
 
 Given our assumption that p > q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.
 
@@ -120,15 +120,15 @@ The receiver generates a new key pair and gives the public key to the sender sho
 
 The recipient waits until the transaction has been added to a block and z blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:
 
-![](https://img.haoqicat.com/2019012802.jpg)
+![](https://img.haoqicat.com/2019020109.jpg)
 
 To get the probability the attacker could still catch up now, we multiply the Poisson density for each amount of progress he could have made by the probability he could catch up from that point:
 
-![](https://img.haoqicat.com/2019012803.jpg)
+![](https://img.haoqicat.com/2019020110.jpg)
 
 Rearranging to avoid summing the infinite tail of the distribution...
 
-![](https://img.haoqicat.com/2019012804.jpg)
+![](https://img.haoqicat.com/2019020111.jpg)
 
 
 Converting to C code...
